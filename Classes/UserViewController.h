@@ -15,6 +15,7 @@
   IBOutlet UITextField *usernameSaveField;
   IBOutlet UITextField *passwordSaveField;
   IBOutlet UITextField *emailSaveField;
+  IBOutlet UITextField *uidSaveField;
   IBOutlet UITextField *uidGetField;
   IBOutlet UITextField *uidDeleteField;
   IBOutlet UILabel *responseStatus;

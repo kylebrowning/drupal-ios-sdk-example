@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   session = [[DIOSConnect alloc] init];
-  
 }
 
 -(IBAction) login {
@@ -36,6 +35,7 @@
   [userData setObject:[usernameSaveField text] forKey:@"name"];
   [userData setObject:[passwordSaveField text] forKey:@"pass"];
   [userData setObject:[emailSaveField text] forKey:@"mail"];
+  [userData setObject:[uidSaveField text] forKey:@"uid"];
   [user userSave:userData];
   [self displayDebugDIOS:user];
 }

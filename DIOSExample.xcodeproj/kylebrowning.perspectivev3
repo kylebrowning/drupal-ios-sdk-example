@@ -258,6 +258,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -302,18 +304,19 @@
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1DD81FB5125FC51B00707724</string>
 								<string>1DD81FB6125FC51B00707724</string>
+								<string>1C77FABC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>15</integer>
+									<integer>5</integer>
 									<integer>3</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {257, 1027}}</string>
+							<string>{{0, 10}, {257, 1027}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -341,14 +344,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1DD81D69125FC44200707724</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DIOSUser.m</string>
+								<string>DIOSComment.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -356,26 +357,31 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1DD81D6A125FC44200707724</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>DIOSUser.m</string>
+										<string>DIOSComment.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1DD822D4125FFD7800707724</string>
+										<string>1DD824181260159E00707724</string>
 										<key>history</key>
 										<array>
-											<string>1DD81FB0125FC51800707724</string>
 											<string>1DD81FB1125FC51800707724</string>
 											<string>1DD81FB2125FC51800707724</string>
 											<string>1DD8205B125FC8DF00707724</string>
-											<string>1DD820E8125FDA8500707724</string>
-											<string>1DD821DB125FED2F00707724</string>
-											<string>1DD8222A125FF3A900707724</string>
 											<string>1DD82245125FF49000707724</string>
-											<string>1DD82269125FF50900707724</string>
-											<string>1DD822C7125FFD2E00707724</string>
-											<string>1DD822C8125FFD2E00707724</string>
-											<string>1DD822C9125FFD2E00707724</string>
-											<string>1DD822D3125FFD7400707724</string>
+											<string>1DD822DD125FFEC900707724</string>
+											<string>1DD8237C12600F3B00707724</string>
+											<string>1DD823F0126013F100707724</string>
+											<string>1DD823F1126013F100707724</string>
+											<string>1DD823F2126013F100707724</string>
+											<string>1DD82400126014C700707724</string>
+											<string>1DD82401126014C700707724</string>
+											<string>1DD82402126014C700707724</string>
+											<string>1DD82403126014C700707724</string>
+											<string>1DD82404126014C700707724</string>
+											<string>1DD8240E1260153300707724</string>
+											<string>1DD8240F1260153300707724</string>
+											<string>1DD824161260159E00707724</string>
+											<string>1DD824171260159E00707724</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -675,7 +681,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>308280696.456855</real>
+	<real>308286878.08745497</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -692,6 +698,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1DD824131260153300707724</string>
 		<string>1DD8206D125FC90400707724</string>
 		<string>1DD82036125FC63C00707724</string>
 		<string>/Users/kylebrowning/Sites/DIOSExample/DIOSExample.xcodeproj</string>

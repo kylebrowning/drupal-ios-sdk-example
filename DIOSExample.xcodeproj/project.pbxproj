@@ -31,6 +31,8 @@
 		1DD82021125FC60000707724 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD82020125FC60000707724 /* SystemConfiguration.framework */; };
 		1DD8204E125FC72500707724 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD8204C125FC72500707724 /* UserViewController.m */; };
 		1DD8204F125FC72500707724 /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD8204D125FC72500707724 /* UserViewController.xib */; };
+		1DD822F1125FFF8000707724 /* NodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD822EF125FFF8000707724 /* NodeViewController.m */; };
+		1DD822F2125FFF8000707724 /* NodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD822F0125FFF8000707724 /* NodeViewController.xib */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
 		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
@@ -83,6 +85,9 @@
 		1DD8204B125FC72500707724 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
 		1DD8204C125FC72500707724 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
 		1DD8204D125FC72500707724 /* UserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = UserViewController.xib; path = Classes/UserViewController.xib; sourceTree = "<group>"; };
+		1DD822EE125FFF8000707724 /* NodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeViewController.h; sourceTree = "<group>"; };
+		1DD822EF125FFF8000707724 /* NodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeViewController.m; sourceTree = "<group>"; };
+		1DD822F0125FFF8000707724 /* NodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NodeViewController.xib; path = Classes/NodeViewController.xib; sourceTree = "<group>"; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28A0AB4B0D9B1048005BE974 /* DIOSExample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSExample_Prefix.pch; sourceTree = "<group>"; };
@@ -119,6 +124,8 @@
 				1D3623250D0F684500981E51 /* DIOSExampleAppDelegate.m */,
 				1DD8204B125FC72500707724 /* UserViewController.h */,
 				1DD8204C125FC72500707724 /* UserViewController.m */,
+				1DD822EE125FFF8000707724 /* NodeViewController.h */,
+				1DD822EF125FFF8000707724 /* NodeViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -214,6 +221,7 @@
 				1DD8204D125FC72500707724 /* UserViewController.xib */,
 				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* DIOSExample-Info.plist */,
+				1DD822F0125FFF8000707724 /* NodeViewController.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -284,6 +292,7 @@
 			files = (
 				28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */,
 				1DD8204F125FC72500707724 /* UserViewController.xib in Resources */,
+				1DD822F2125FFF8000707724 /* NodeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +320,7 @@
 				1DD81FD1125FC52200707724 /* ASINetworkQueue.m in Sources */,
 				1DD81FD2125FC52200707724 /* Reachability.m in Sources */,
 				1DD8204E125FC72500707724 /* UserViewController.m in Sources */,
+				1DD822F1125FFF8000707724 /* NodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
