@@ -70,7 +70,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1282, 1300}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{2206, 1226}";
+			sepNavVisRange = "{1923, 1250}";
 		};
 	};
 	1DD81F80125FC4EE00707724 /* DIOSConnect.h */ = {
@@ -82,23 +82,30 @@
 	};
 	1DD81F81125FC4EE00707724 /* DIOSConnect.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1561, 3718}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1282, 3575}}";
 			sepNavSelRange = "{8220, 0}";
-			sepNavVisRange = "{7728, 701}";
+			sepNavVisRange = "{7541, 1384}";
 		};
 	};
 	1DD81F84125FC4EE00707724 /* DIOSNode.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1561, 624}}";
-			sepNavSelRange = "{1780, 0}";
-			sepNavVisRange = "{1227, 554}";
+			sepNavIntBoundsRect = "{{0, 0}, {1282, 624}}";
+			sepNavSelRange = "{1717, 0}";
+			sepNavVisRange = "{329, 1388}";
 		};
 	};
 	1DD81F85125FC4EE00707724 /* DIOSNode.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1282, 962}}";
-			sepNavSelRange = "{1936, 0}";
-			sepNavVisRange = "{1496, 1091}";
+			sepNavIntBoundsRect = "{{0, 0}, {1282, 871}}";
+			sepNavSelRange = "{1698, 0}";
+			sepNavVisRange = "{992, 1138}";
+		};
+	};
+	1DD81F87125FC4EE00707724 /* DIOSTaxonomy.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1282, 1716}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{3385, 942}";
 		};
 	};
 	1DD81F88125FC4EE00707724 /* DIOSUser.h */ = {
@@ -3924,9 +3931,9 @@
 	};
 	1DD822EF125FFF8000707724 /* NodeViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1282, 858}}";
-			sepNavSelRange = "{1224, 0}";
-			sepNavVisRange = "{259, 1411}";
+			sepNavIntBoundsRect = "{{0, 0}, {1561, 845}}";
+			sepNavSelRange = "{1190, 0}";
+			sepNavVisRange = "{971, 679}";
 		};
 	};
 	1DD822F4125FFF9C00707724 /* PBXTextBookmark */ = {
@@ -4182,7 +4189,7 @@
 		ignoreCount = 0;
 		lineNumber = 64;
 		location = DIOSExample;
-		modificationTime = 308286772.365788;
+		modificationTime = 308287171.737435;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -4470,7 +4477,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 55";
 		rLen = 0;
-		rLoc = 2397;
+		rLoc = 2544;
 		rType = 0;
 		vrLen = 1032;
 		vrLoc = 1302;
@@ -4480,7 +4487,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 55";
 		rLen = 0;
-		rLoc = 2397;
+		rLoc = 2544;
 		rType = 0;
 		vrLen = 1032;
 		vrLoc = 1302;
@@ -4561,7 +4568,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 68;
+		rLoc = 73;
 		rType = 1;
 	};
 	1DD8236012600D2D00707724 /* PBXTextBookmark */ = {
@@ -4569,7 +4576,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 51";
 		rLen = 0;
-		rLoc = 2108;
+		rLoc = 2255;
 		rType = 0;
 		vrLen = 1095;
 		vrLoc = 1224;
@@ -4579,7 +4586,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 51";
 		rLen = 0;
-		rLoc = 2108;
+		rLoc = 2255;
 		rType = 0;
 		vrLen = 1017;
 		vrLoc = 1302;
@@ -4599,7 +4606,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 51";
 		rLen = 0;
-		rLoc = 2108;
+		rLoc = 2255;
 		rType = 0;
 		vrLen = 443;
 		vrLoc = 1555;
@@ -4609,7 +4616,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 51";
 		rLen = 0;
-		rLoc = 2108;
+		rLoc = 2255;
 		rType = 0;
 		vrLen = 1022;
 		vrLoc = 1302;
@@ -4619,7 +4626,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 51";
 		rLen = 0;
-		rLoc = 2108;
+		rLoc = 2255;
 		rType = 0;
 		vrLen = 1022;
 		vrLoc = 1302;
@@ -4629,7 +4636,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 51";
 		rLen = 0;
-		rLoc = 2108;
+		rLoc = 2255;
 		rType = 0;
 		vrLen = 869;
 		vrLoc = 1455;
@@ -4639,7 +4646,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 51";
 		rLen = 0;
-		rLoc = 2108;
+		rLoc = 2255;
 		rType = 0;
 		vrLen = 443;
 		vrLoc = 1555;
@@ -4649,7 +4656,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 51";
 		rLen = 0;
-		rLoc = 2108;
+		rLoc = 2255;
 		rType = 0;
 		vrLen = 869;
 		vrLoc = 1455;
@@ -4719,7 +4726,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 51";
 		rLen = 0;
-		rLoc = 2108;
+		rLoc = 2255;
 		rType = 0;
 		vrLen = 443;
 		vrLoc = 1555;
@@ -4879,7 +4886,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 51";
 		rLen = 0;
-		rLoc = 2108;
+		rLoc = 2255;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 1378;
@@ -4889,7 +4896,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 51";
 		rLen = 0;
-		rLoc = 2108;
+		rLoc = 2255;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 1378;
@@ -4899,7 +4906,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 51";
 		rLen = 0;
-		rLoc = 2108;
+		rLoc = 2255;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 1378;
@@ -5060,7 +5067,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 53;
+		rLoc = 58;
 		rType = 1;
 	};
 	1DD823A71260112A00707724 /* PBXTextBookmark */ = {
@@ -5068,7 +5075,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 48";
 		rLen = 0;
-		rLoc = 2030;
+		rLoc = 2177;
 		rType = 0;
 		vrLen = 1095;
 		vrLoc = 1302;
@@ -5078,7 +5085,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 48";
 		rLen = 0;
-		rLoc = 2030;
+		rLoc = 2177;
 		rType = 0;
 		vrLen = 1019;
 		vrLoc = 1378;
@@ -5098,7 +5105,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 48";
 		rLen = 0;
-		rLoc = 2030;
+		rLoc = 2177;
 		rType = 0;
 		vrLen = 327;
 		vrLoc = 1532;
@@ -5118,7 +5125,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 48";
 		rLen = 0;
-		rLoc = 2030;
+		rLoc = 2177;
 		rType = 0;
 		vrLen = 1019;
 		vrLoc = 1378;
@@ -5178,7 +5185,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 48";
 		rLen = 0;
-		rLoc = 2030;
+		rLoc = 2177;
 		rType = 0;
 		vrLen = 327;
 		vrLoc = 1532;
@@ -5631,7 +5638,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 44";
 		rLen = 44;
-		rLoc = 1630;
+		rLoc = 1777;
 		rType = 0;
 		vrLen = 1091;
 		vrLoc = 1496;
@@ -5650,7 +5657,7 @@
 		fRef = 1DD81F84125FC4EE00707724 /* DIOSNode.h */;
 		name = "DIOSNode.h: 46";
 		rLen = 0;
-		rLoc = 1780;
+		rLoc = 1815;
 		rType = 0;
 		vrLen = 1457;
 		vrLoc = 329;
@@ -5660,7 +5667,7 @@
 		fRef = 1DD81F84125FC4EE00707724 /* DIOSNode.h */;
 		name = "DIOSNode.h: 46";
 		rLen = 0;
-		rLoc = 1780;
+		rLoc = 1815;
 		rType = 0;
 		vrLen = 1454;
 		vrLoc = 332;
@@ -5680,7 +5687,7 @@
 		fRef = 1DD81F84125FC4EE00707724 /* DIOSNode.h */;
 		name = "DIOSNode.h: 46";
 		rLen = 0;
-		rLoc = 1780;
+		rLoc = 1815;
 		rType = 0;
 		vrLen = 554;
 		vrLoc = 1227;
@@ -5690,7 +5697,7 @@
 		fRef = 1DD81F84125FC4EE00707724 /* DIOSNode.h */;
 		name = "DIOSNode.h: 46";
 		rLen = 0;
-		rLoc = 1780;
+		rLoc = 1815;
 		rType = 0;
 		vrLen = 1454;
 		vrLoc = 332;
@@ -5700,7 +5707,7 @@
 		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
 		name = "DIOSNode.m: 52";
 		rLen = 0;
-		rLoc = 1936;
+		rLoc = 2083;
 		rType = 0;
 		vrLen = 1091;
 		vrLoc = 1496;
@@ -5740,7 +5747,7 @@
 		fRef = 1DD81F84125FC4EE00707724 /* DIOSNode.h */;
 		name = "DIOSNode.h: 46";
 		rLen = 0;
-		rLoc = 1780;
+		rLoc = 1815;
 		rType = 0;
 		vrLen = 554;
 		vrLoc = 1227;
@@ -5784,6 +5791,168 @@
 		rType = 0;
 		vrLen = 1226;
 		vrLoc = 2206;
+	};
+	1DD8241B1260169400707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD81F87125FC4EE00707724 /* DIOSTaxonomy.m */;
+		name = "DIOSTaxonomy.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 942;
+		vrLoc = 3385;
+	};
+	1DD8241C1260169400707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD81F81125FC4EE00707724 /* DIOSConnect.m */;
+		name = "DIOSConnect.m: 207";
+		rLen = 0;
+		rLoc = 8220;
+		rType = 0;
+		vrLen = 1384;
+		vrLoc = 7541;
+	};
+	1DD8241D1260169400707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD81F7F125FC4EE00707724 /* DIOSComment.m */;
+		name = "DIOSComment.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1284;
+		vrLoc = 2148;
+	};
+	1DD8241E1260169400707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD81F7F125FC4EE00707724 /* DIOSComment.m */;
+		name = "DIOSComment.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1336;
+		vrLoc = 1837;
+	};
+	1DD8241F1260169500707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD81F7F125FC4EE00707724 /* DIOSComment.m */;
+		name = "DIOSComment.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1250;
+		vrLoc = 1923;
+	};
+	1DD82422126016A100707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD81F7F125FC4EE00707724 /* DIOSComment.m */;
+		name = "DIOSComment.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 451;
+		vrLoc = 1880;
+	};
+	1DD82423126016A100707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD82424126016A100707724 /* asm __kill  0x940b0eec */;
+		name = "asm __kill  0x940b0eec: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 344;
+		vrLoc = 0;
+	};
+	1DD82424126016A100707724 /* asm __kill  0x940b0eec */ = {
+		isa = PBXFileReference;
+		path = "asm __kill  0x940b0eec";
+		sourceTree = "<group>";
+	};
+	1DD82425126016A100707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD822EF125FFF8000707724 /* NodeViewController.m */;
+		rLen = 0;
+		rLoc = 38;
+		rType = 1;
+	};
+	1DD82426126016A100707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD822EF125FFF8000707724 /* NodeViewController.m */;
+		name = "NodeViewController.m: 39";
+		rLen = 0;
+		rLoc = 1190;
+		rType = 0;
+		vrLen = 679;
+		vrLoc = 971;
+	};
+	1DD82429126016C300707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD81F7F125FC4EE00707724 /* DIOSComment.m */;
+		name = "DIOSComment.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1250;
+		vrLoc = 1923;
+	};
+	1DD8242A126016C300707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD822EF125FFF8000707724 /* NodeViewController.m */;
+		name = "NodeViewController.m: 39";
+		rLen = 0;
+		rLoc = 1190;
+		rType = 0;
+		vrLen = 1460;
+		vrLoc = 407;
+	};
+	1DD8242B126016C300707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD81F84125FC4EE00707724 /* DIOSNode.h */;
+		name = "DIOSNode.h: 48";
+		rLen = 0;
+		rLoc = 1752;
+		rType = 0;
+		vrLen = 1388;
+		vrLoc = 329;
+	};
+	1DD8242C126016C300707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
+		name = "DIOSNode.m: 55";
+		rLen = 0;
+		rLoc = 2083;
+		rType = 0;
+		vrLen = 1076;
+		vrLoc = 917;
+	};
+	1DD8242D126016C300707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
+		name = "DIOSNode.m: 45";
+		rLen = 0;
+		rLoc = 1698;
+		rType = 0;
+		vrLen = 1288;
+		vrLoc = 842;
+	};
+	1DD8242E126016C300707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
+		name = "DIOSNode.m: 45";
+		rLen = 0;
+		rLoc = 1698;
+		rType = 0;
+		vrLen = 1138;
+		vrLoc = 992;
+	};
+	1DD82430126016CD00707724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */;
+		name = "DIOSNode.m: 45";
+		rLen = 0;
+		rLoc = 1698;
+		rType = 0;
+		vrLen = 1138;
+		vrLoc = 992;
 	};
 	28216C950DB411BC00E5133A /* FirstViewController.h */ = {
 		isa = PBXFileReference;
@@ -6464,6 +6633,22 @@
 			1DD824161260159E00707724 /* PBXTextBookmark */ = 1DD824161260159E00707724 /* PBXTextBookmark */;
 			1DD824171260159E00707724 /* PBXTextBookmark */ = 1DD824171260159E00707724 /* PBXTextBookmark */;
 			1DD824181260159E00707724 /* PBXTextBookmark */ = 1DD824181260159E00707724 /* PBXTextBookmark */;
+			1DD8241B1260169400707724 /* PBXTextBookmark */ = 1DD8241B1260169400707724 /* PBXTextBookmark */;
+			1DD8241C1260169400707724 /* PBXTextBookmark */ = 1DD8241C1260169400707724 /* PBXTextBookmark */;
+			1DD8241D1260169400707724 /* PBXTextBookmark */ = 1DD8241D1260169400707724 /* PBXTextBookmark */;
+			1DD8241E1260169400707724 /* PBXTextBookmark */ = 1DD8241E1260169400707724 /* PBXTextBookmark */;
+			1DD8241F1260169500707724 /* PBXTextBookmark */ = 1DD8241F1260169500707724 /* PBXTextBookmark */;
+			1DD82422126016A100707724 /* PBXTextBookmark */ = 1DD82422126016A100707724 /* PBXTextBookmark */;
+			1DD82423126016A100707724 /* PBXTextBookmark */ = 1DD82423126016A100707724 /* PBXTextBookmark */;
+			1DD82425126016A100707724 /* PBXTextBookmark */ = 1DD82425126016A100707724 /* PBXTextBookmark */;
+			1DD82426126016A100707724 /* PBXTextBookmark */ = 1DD82426126016A100707724 /* PBXTextBookmark */;
+			1DD82429126016C300707724 /* PBXTextBookmark */ = 1DD82429126016C300707724 /* PBXTextBookmark */;
+			1DD8242A126016C300707724 /* PBXTextBookmark */ = 1DD8242A126016C300707724 /* PBXTextBookmark */;
+			1DD8242B126016C300707724 /* PBXTextBookmark */ = 1DD8242B126016C300707724 /* PBXTextBookmark */;
+			1DD8242C126016C300707724 /* PBXTextBookmark */ = 1DD8242C126016C300707724 /* PBXTextBookmark */;
+			1DD8242D126016C300707724 /* PBXTextBookmark */ = 1DD8242D126016C300707724 /* PBXTextBookmark */;
+			1DD8242E126016C300707724 /* PBXTextBookmark */ = 1DD8242E126016C300707724 /* PBXTextBookmark */;
+			1DD82430126016CD00707724 /* PBXTextBookmark */ = 1DD82430126016CD00707724 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 1DD81D6F125FC44200707724 /* Source Control */;
 		userBuildSettings = {
