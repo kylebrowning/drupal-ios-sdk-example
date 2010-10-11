@@ -10,6 +10,8 @@
 		1D3623260D0F684500981E51 /* DIOSExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* DIOSExampleAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DD084521263AE80007F0552 /* ViewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD084501263AE80007F0552 /* ViewsViewController.m */; };
+		1DD084531263AE80007F0552 /* ViewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD084511263AE80007F0552 /* ViewsViewController.xib */; };
 		1DD81FA4125FC4EE00707724 /* DIOSComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F7F125FC4EE00707724 /* DIOSComment.m */; };
 		1DD81FA5125FC4EE00707724 /* DIOSConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F81125FC4EE00707724 /* DIOSConnect.m */; };
 		1DD81FA6125FC4EE00707724 /* DIOSFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F83125FC4EE00707724 /* DIOSFile.m */; };
@@ -43,6 +45,9 @@
 		1D3623240D0F684500981E51 /* DIOSExampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSExampleAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* DIOSExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSExampleAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* DIOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DIOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD0844F1263AE80007F0552 /* ViewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewsViewController.h; sourceTree = "<group>"; };
+		1DD084501263AE80007F0552 /* ViewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewsViewController.m; sourceTree = "<group>"; };
+		1DD084511263AE80007F0552 /* ViewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewsViewController.xib; path = Classes/ViewsViewController.xib; sourceTree = "<group>"; };
 		1DD81F7E125FC4EE00707724 /* DIOSComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSComment.h; sourceTree = "<group>"; };
 		1DD81F7F125FC4EE00707724 /* DIOSComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSComment.m; sourceTree = "<group>"; };
 		1DD81F80125FC4EE00707724 /* DIOSConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSConnect.h; sourceTree = "<group>"; };
@@ -126,6 +131,8 @@
 				1DD8204C125FC72500707724 /* UserViewController.m */,
 				1DD822EE125FFF8000707724 /* NodeViewController.h */,
 				1DD822EF125FFF8000707724 /* NodeViewController.m */,
+				1DD0844F1263AE80007F0552 /* ViewsViewController.h */,
+				1DD084501263AE80007F0552 /* ViewsViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -218,6 +225,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1DD084511263AE80007F0552 /* ViewsViewController.xib */,
 				1DD8204D125FC72500707724 /* UserViewController.xib */,
 				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* DIOSExample-Info.plist */,
@@ -293,6 +301,7 @@
 				28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */,
 				1DD8204F125FC72500707724 /* UserViewController.xib in Resources */,
 				1DD822F2125FFF8000707724 /* NodeViewController.xib in Resources */,
+				1DD084531263AE80007F0552 /* ViewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +330,7 @@
 				1DD81FD2125FC52200707724 /* Reachability.m in Sources */,
 				1DD8204E125FC72500707724 /* UserViewController.m in Sources */,
 				1DD822F1125FFF8000707724 /* NodeViewController.m in Sources */,
+				1DD084521263AE80007F0552 /* ViewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
