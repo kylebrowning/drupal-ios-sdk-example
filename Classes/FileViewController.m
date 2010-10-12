@@ -20,11 +20,10 @@
 }
 
 -(IBAction) getFile:(id) sender {
-//  DIOSFile *aFile = [[DIOSFile alloc] initWithSession:session];
-//  [aFile fileGet:[fileIdField text]];
-//  [responseStatus setText:[aFile responseStatusMessage]];
-//  [urlLabel setText:[aFile methodUrl]];
-//  [self displayDebugDIOS:aFile];
+  DIOSFile *aFile = [[DIOSFile alloc] initWithSession:session];
+  [aFile fileGet:[fileIdField text]];
+  [responseStatus setText:[aFile responseStatusMessage]];
+  [urlLabel setText:[aFile methodUrl]];
 
 }
 -(IBAction) getNodeFiles:(id) sender {
@@ -51,7 +50,7 @@
   
   NSString *base64Image = [aFile base64forData:imageData];
   [file setObject:base64Image forKey:@"file"];
-  [file setObject:@"/Users/kylebrowning/Sites/drupal6/sites/default/files/temp.jpg" forKey:@"filepath"];
+  [file setObject:@"sites/default/files/temp.jpg" forKey:@"filepath"];
   [file setObject:@"temp.jpg" forKey:@"filename"];
   [aFile fileSave:file];  
   

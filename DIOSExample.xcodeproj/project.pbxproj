@@ -14,6 +14,7 @@
 		1DD084531263AE80007F0552 /* ViewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD084511263AE80007F0552 /* ViewsViewController.xib */; };
 		1DD084FB1263D0AC007F0552 /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD084F91263D0AC007F0552 /* FileViewController.m */; };
 		1DD084FC1263D0AC007F0552 /* FileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD084FA1263D0AC007F0552 /* FileViewController.xib */; };
+		1DD087381263EA36007F0552 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD087371263EA36007F0552 /* NSData+Base64.m */; };
 		1DD81FA4125FC4EE00707724 /* DIOSComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F7F125FC4EE00707724 /* DIOSComment.m */; };
 		1DD81FA5125FC4EE00707724 /* DIOSConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F81125FC4EE00707724 /* DIOSConnect.m */; };
 		1DD81FA6125FC4EE00707724 /* DIOSFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F83125FC4EE00707724 /* DIOSFile.m */; };
@@ -53,6 +54,8 @@
 		1DD084F81263D0AC007F0552 /* FileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileViewController.h; sourceTree = "<group>"; };
 		1DD084F91263D0AC007F0552 /* FileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileViewController.m; sourceTree = "<group>"; };
 		1DD084FA1263D0AC007F0552 /* FileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FileViewController.xib; path = Classes/FileViewController.xib; sourceTree = "<group>"; };
+		1DD087361263EA36007F0552 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		1DD087371263EA36007F0552 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		1DD81F7E125FC4EE00707724 /* DIOSComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSComment.h; sourceTree = "<group>"; };
 		1DD81F7F125FC4EE00707724 /* DIOSComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSComment.m; sourceTree = "<group>"; };
 		1DD81F80125FC4EE00707724 /* DIOSConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSConnect.h; sourceTree = "<group>"; };
@@ -152,9 +155,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1DD087351263EA36007F0552 /* NSData_Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				1DD087361263EA36007F0552 /* NSData+Base64.h */,
+				1DD087371263EA36007F0552 /* NSData+Base64.m */,
+			);
+			path = NSData_Base64;
+			sourceTree = "<group>";
+		};
 		1DD81F58125FC4EE00707724 /* drupal-ios-sdk */ = {
 			isa = PBXGroup;
 			children = (
+				1DD087351263EA36007F0552 /* NSData_Base64 */,
 				1DD81F7E125FC4EE00707724 /* DIOSComment.h */,
 				1DD81F7F125FC4EE00707724 /* DIOSComment.m */,
 				1DD81F80125FC4EE00707724 /* DIOSConnect.h */,
@@ -341,6 +354,7 @@
 				1DD822F1125FFF8000707724 /* NodeViewController.m in Sources */,
 				1DD084521263AE80007F0552 /* ViewsViewController.m in Sources */,
 				1DD084FB1263D0AC007F0552 /* FileViewController.m in Sources */,
+				1DD087381263EA36007F0552 /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
