@@ -21,10 +21,11 @@
 }
 
 -(IBAction) getFile:(id) sender {
+  [imageViewGet setImage:nil];
   DIOSFile *aFile = [[DIOSFile alloc] initWithSession:session];
   [aFile fileGet:[fileIdField text]];
   NSData *returnedImageData = [NSData dataFromBase64String:[[[aFile connResult] objectForKey:@"#data"] objectForKey:@"file"]];
-  [imageView setImage:[UIImage imageWithData:returnedImageData]];
+  [imageViewGet setImage:[UIImage imageWithData:returnedImageData]];
   [responseStatus setText:[aFile responseStatusMessage]];
   [urlLabel setText:[aFile methodUrl]];
   [aFile release];
@@ -60,6 +61,7 @@
   [file setObject:@"temp.jpg" forKey:@"filename"];
   [aFile fileSave:file];  
   [self displayDebugDIOS:aFile];
+  imageView.image = nil;
   [aFile release];
 }
 - (void) displayDebugDIOS:(id)aDIOSConnect {

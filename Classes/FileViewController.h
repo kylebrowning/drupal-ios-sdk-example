@@ -11,6 +11,7 @@
 
 @interface FileViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>{
   IBOutlet UIImageView *imageView;
+  IBOutlet UIImageView *imageViewGet;
   UIPopoverController *popover;
   IBOutlet UIButton *uploadButton;
   NSData *imageData;
