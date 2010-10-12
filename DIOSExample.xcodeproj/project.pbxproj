@@ -12,6 +12,8 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DD084521263AE80007F0552 /* ViewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD084501263AE80007F0552 /* ViewsViewController.m */; };
 		1DD084531263AE80007F0552 /* ViewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD084511263AE80007F0552 /* ViewsViewController.xib */; };
+		1DD084FB1263D0AC007F0552 /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD084F91263D0AC007F0552 /* FileViewController.m */; };
+		1DD084FC1263D0AC007F0552 /* FileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD084FA1263D0AC007F0552 /* FileViewController.xib */; };
 		1DD81FA4125FC4EE00707724 /* DIOSComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F7F125FC4EE00707724 /* DIOSComment.m */; };
 		1DD81FA5125FC4EE00707724 /* DIOSConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F81125FC4EE00707724 /* DIOSConnect.m */; };
 		1DD81FA6125FC4EE00707724 /* DIOSFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F83125FC4EE00707724 /* DIOSFile.m */; };
@@ -48,6 +50,9 @@
 		1DD0844F1263AE80007F0552 /* ViewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewsViewController.h; sourceTree = "<group>"; };
 		1DD084501263AE80007F0552 /* ViewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewsViewController.m; sourceTree = "<group>"; };
 		1DD084511263AE80007F0552 /* ViewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewsViewController.xib; path = Classes/ViewsViewController.xib; sourceTree = "<group>"; };
+		1DD084F81263D0AC007F0552 /* FileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileViewController.h; sourceTree = "<group>"; };
+		1DD084F91263D0AC007F0552 /* FileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileViewController.m; sourceTree = "<group>"; };
+		1DD084FA1263D0AC007F0552 /* FileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FileViewController.xib; path = Classes/FileViewController.xib; sourceTree = "<group>"; };
 		1DD81F7E125FC4EE00707724 /* DIOSComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSComment.h; sourceTree = "<group>"; };
 		1DD81F7F125FC4EE00707724 /* DIOSComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSComment.m; sourceTree = "<group>"; };
 		1DD81F80125FC4EE00707724 /* DIOSConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSConnect.h; sourceTree = "<group>"; };
@@ -133,6 +138,8 @@
 				1DD822EF125FFF8000707724 /* NodeViewController.m */,
 				1DD0844F1263AE80007F0552 /* ViewsViewController.h */,
 				1DD084501263AE80007F0552 /* ViewsViewController.m */,
+				1DD084F81263D0AC007F0552 /* FileViewController.h */,
+				1DD084F91263D0AC007F0552 /* FileViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -228,6 +235,7 @@
 				1DD084511263AE80007F0552 /* ViewsViewController.xib */,
 				1DD8204D125FC72500707724 /* UserViewController.xib */,
 				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
+				1DD084FA1263D0AC007F0552 /* FileViewController.xib */,
 				8D1107310486CEB800E47090 /* DIOSExample-Info.plist */,
 				1DD822F0125FFF8000707724 /* NodeViewController.xib */,
 			);
@@ -302,6 +310,7 @@
 				1DD8204F125FC72500707724 /* UserViewController.xib in Resources */,
 				1DD822F2125FFF8000707724 /* NodeViewController.xib in Resources */,
 				1DD084531263AE80007F0552 /* ViewsViewController.xib in Resources */,
+				1DD084FC1263D0AC007F0552 /* FileViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +340,7 @@
 				1DD8204E125FC72500707724 /* UserViewController.m in Sources */,
 				1DD822F1125FFF8000707724 /* NodeViewController.m in Sources */,
 				1DD084521263AE80007F0552 /* ViewsViewController.m in Sources */,
+				1DD084FB1263D0AC007F0552 /* FileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

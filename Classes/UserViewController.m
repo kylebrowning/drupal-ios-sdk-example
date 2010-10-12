@@ -43,6 +43,7 @@
   DIOSUser *user = [[DIOSUser alloc] initWithSession:session];
   [user userGet:[uidGetField text]];
   [self displayDebugDIOS:user];
+  [user release];
 }
 
 -(IBAction) delete {
