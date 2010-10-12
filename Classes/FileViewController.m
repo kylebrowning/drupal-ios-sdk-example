@@ -31,7 +31,9 @@
 
 }
 -(IBAction) getNodeFiles:(id) sender {
-  
+  DIOSFile *aFile = [[DIOSFile alloc] initWithSession:session];
+  [aFile fileGetNodeFiles:[nodeIdField text]];
+  [self displayDebugDIOS:aFile];
 }
 -(IBAction) getPhoto:(id) sender {
 	UIImagePickerController * picker = [[UIImagePickerController alloc] init];
