@@ -241,7 +241,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1DD0878C126423B8007F0552</string>
+						<string>1DD0879A126424FE007F0552</string>
 						<key>history</key>
 						<array>
 							<string>1DD0850B1263D166007F0552</string>
@@ -281,7 +281,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1DD0878D126423B8007F0552</string>
+						<string>1DD0879B126424FE007F0552</string>
 						<key>history</key>
 						<array>
 							<string>1DD0850A1263D164007F0552</string>
@@ -424,7 +424,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1DD81D69125FC44200707724</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>FileViewController.m</string>
+								<string>ViewsViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -432,11 +432,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1DD81D6A125FC44200707724</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>FileViewController.m</string>
+										<string>ViewsViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1DD0878B126423B8007F0552</string>
+										<string>1DD08799126424FE007F0552</string>
 										<key>history</key>
 										<array>
 											<string>1DD8205B125FC8DF00707724</string>
@@ -453,11 +453,8 @@
 											<string>1DD084AD1263B306007F0552</string>
 											<string>1DD084EF1263CAA0007F0552</string>
 											<string>1DD084F11263CAA0007F0552</string>
-											<string>1DD0850F1263D17A007F0552</string>
-											<string>1DD085111263D17A007F0552</string>
 											<string>1DD085C91263D9B8007F0552</string>
 											<string>1DD085E61263DAF6007F0552</string>
-											<string>1DD086651263DD3D007F0552</string>
 											<string>1DD086661263DD3D007F0552</string>
 											<string>1DD087391263EA4E007F0552</string>
 											<string>1DD08764126422A3007F0552</string>
@@ -466,7 +463,10 @@
 											<string>1DD0878012642349007F0552</string>
 											<string>1DD08787126423B7007F0552</string>
 											<string>1DD08788126423B7007F0552</string>
-											<string>1DD08789126423B7007F0552</string>
+											<string>1DD08794126424FE007F0552</string>
+											<string>1DD08795126424FE007F0552</string>
+											<string>1DD08796126424FE007F0552</string>
+											<string>1DD08797126424FE007F0552</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -770,7 +770,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>308552632.05137098</real>
+	<real>308552958.69942802</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -787,7 +787,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1DD0878E126423B8007F0552</string>
+		<string>1DD0879C126424FE007F0552</string>
 		<string>1DD0847A1263B092007F0552</string>
 		<string>1DD0846C1263B06E007F0552</string>
 		<string>1DD085181263D17A007F0552</string>

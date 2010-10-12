@@ -25,15 +25,15 @@
   [aFile fileGet:[fileIdField text]];
   NSData *returnedImageData = [NSData dataFromBase64String:[[[aFile connResult] objectForKey:@"#data"] objectForKey:@"file"]];
   [imageView setImage:[UIImage imageWithData:returnedImageData]];
-//  [imageView setImage:imageTest];
   [responseStatus setText:[aFile responseStatusMessage]];
   [urlLabel setText:[aFile methodUrl]];
-
+  [aFile release];
 }
 -(IBAction) getNodeFiles:(id) sender {
   DIOSFile *aFile = [[DIOSFile alloc] initWithSession:session];
   [aFile fileGetNodeFiles:[nodeIdField text]];
   [self displayDebugDIOS:aFile];
+  [aFile release];
 }
 -(IBAction) getPhoto:(id) sender {
 	UIImagePickerController * picker = [[UIImagePickerController alloc] init];
@@ -59,8 +59,8 @@
   [file setObject:@"sites/default/files/temp.jpg" forKey:@"filepath"];
   [file setObject:@"temp.jpg" forKey:@"filename"];
   [aFile fileSave:file];  
-  
   [self displayDebugDIOS:aFile];
+  [aFile release];
 }
 - (void) displayDebugDIOS:(id)aDIOSConnect {
   

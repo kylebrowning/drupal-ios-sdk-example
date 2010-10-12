@@ -23,11 +23,13 @@
   DIOSUser *user = [[DIOSUser alloc] initWithSession:session];
   [user loginWithUsername:[usernameLoginField text] andPassword:[passwordLoginField text]];
   [self displayDebugDIOS:user];
+  [user release];
 }
 -(IBAction) logout {
   DIOSUser *user = [[DIOSUser alloc] initWithSession:session];
   [user logout];
   [self displayDebugDIOS:user];
+  [user release];
 }
 -(IBAction) save {
   DIOSUser *user = [[DIOSUser alloc] initWithSession:session];
@@ -38,6 +40,7 @@
   [userData setObject:[uidSaveField text] forKey:@"uid"];
   [user userSave:userData];
   [self displayDebugDIOS:user];
+  [user release];
 }
 -(IBAction) get {
   DIOSUser *user = [[DIOSUser alloc] initWithSession:session];
@@ -50,6 +53,7 @@
   DIOSUser *user = [[DIOSUser alloc] initWithSession:session];
   [user userDelete:[uidDeleteField text]];
   [self displayDebugDIOS:user];
+  [user release];  
 }
 -(void) displayDebugDIOS:(id)aDIOSConnect {
   [responseStatus setText:[aDIOSConnect responseStatusMessage]];

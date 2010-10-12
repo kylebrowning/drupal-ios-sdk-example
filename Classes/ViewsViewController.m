@@ -26,6 +26,7 @@
   [views addParam:[displayNameField text] forKey:@"display_id"];
   [views runMethod];
   [self displayDebugDIOS:views];
+  [views release];
 }
 - (void) displayDebugDIOS:(id)aDIOSConnect {
   [responseStatus setText:[aDIOSConnect responseStatusMessage]];

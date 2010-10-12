@@ -28,16 +28,19 @@
   [nodeData setObject:[[session userInfo] objectForKey:@"name"] forKey:@"name"];
   [node nodeSave:nodeData];
   [self displayDebugDIOS:node];
+  [node release];
 }
 - (IBAction) get {
   DIOSNode *node = [[DIOSNode alloc] initWithSession:session];
   [node nodeGet:[nidGetField text]];
   [self displayDebugDIOS:node];
+  [node release];  
 }
 - (IBAction) delete {
   DIOSNode *node = [[DIOSNode alloc] initWithSession:session];
   [node nodeDelete:[nidDeleteField text]];
   [self displayDebugDIOS:node];
+  [node release];  
 }
 - (void) displayDebugDIOS:(id)aDIOSConnect {
   [responseStatus setText:[aDIOSConnect responseStatusMessage]];
