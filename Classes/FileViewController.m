@@ -8,6 +8,7 @@
 
 #import "FileViewController.h"
 #import "DIOSFile.h"
+#import "NSData+Base64.h"
 
 @implementation FileViewController
 @synthesize imageData;
@@ -22,6 +23,9 @@
 -(IBAction) getFile:(id) sender {
   DIOSFile *aFile = [[DIOSFile alloc] initWithSession:session];
   [aFile fileGet:[fileIdField text]];
+  NSData *returnedImageData = [NSData dataFromBase64String:[[[aFile connResult] objectForKey:@"#data"] objectForKey:@"file"]];
+  [imageView setImage:[UIImage imageWithData:returnedImageData]];
+//  [imageView setImage:imageTest];
   [responseStatus setText:[aFile responseStatusMessage]];
   [urlLabel setText:[aFile methodUrl]];
 
@@ -48,7 +52,7 @@
   DIOSFile *aFile = [[DIOSFile alloc] initWithSession:session];
   NSMutableDictionary *file = [[NSMutableDictionary alloc] init];
   
-  NSString *base64Image = [aFile base64forData:imageData];
+  NSString *base64Image = [imageData base64EncodedString];
   [file setObject:base64Image forKey:@"file"];
   [file setObject:@"sites/default/files/temp.jpg" forKey:@"filepath"];
   [file setObject:@"temp.jpg" forKey:@"filename"];
