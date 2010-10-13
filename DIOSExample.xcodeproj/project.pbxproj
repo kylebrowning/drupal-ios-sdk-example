@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0B65C712653F2F00C5AA1B /* TaxonomyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0B65C512653F2F00C5AA1B /* TaxonomyViewController.m */; };
+		1D0B65C812653F2F00C5AA1B /* TaxonomyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D0B65C612653F2F00C5AA1B /* TaxonomyViewController.xib */; };
 		1D3623260D0F684500981E51 /* DIOSExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* DIOSExampleAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -44,6 +46,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D0B65C412653F2F00C5AA1B /* TaxonomyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxonomyViewController.h; sourceTree = "<group>"; };
+		1D0B65C512653F2F00C5AA1B /* TaxonomyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxonomyViewController.m; sourceTree = "<group>"; };
+		1D0B65C612653F2F00C5AA1B /* TaxonomyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TaxonomyViewController.xib; path = Classes/TaxonomyViewController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* DIOSExampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSExampleAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* DIOSExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSExampleAppDelegate.m; sourceTree = "<group>"; };
@@ -143,6 +148,8 @@
 				1DD084501263AE80007F0552 /* ViewsViewController.m */,
 				1DD084F81263D0AC007F0552 /* FileViewController.h */,
 				1DD084F91263D0AC007F0552 /* FileViewController.m */,
+				1D0B65C412653F2F00C5AA1B /* TaxonomyViewController.h */,
+				1D0B65C512653F2F00C5AA1B /* TaxonomyViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -251,6 +258,7 @@
 				1DD084FA1263D0AC007F0552 /* FileViewController.xib */,
 				8D1107310486CEB800E47090 /* DIOSExample-Info.plist */,
 				1DD822F0125FFF8000707724 /* NodeViewController.xib */,
+				1D0B65C612653F2F00C5AA1B /* TaxonomyViewController.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -324,6 +332,7 @@
 				1DD822F2125FFF8000707724 /* NodeViewController.xib in Resources */,
 				1DD084531263AE80007F0552 /* ViewsViewController.xib in Resources */,
 				1DD084FC1263D0AC007F0552 /* FileViewController.xib in Resources */,
+				1D0B65C812653F2F00C5AA1B /* TaxonomyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +364,7 @@
 				1DD084521263AE80007F0552 /* ViewsViewController.m in Sources */,
 				1DD084FB1263D0AC007F0552 /* FileViewController.m in Sources */,
 				1DD087381263EA36007F0552 /* NSData+Base64.m in Sources */,
+				1D0B65C712653F2F00C5AA1B /* TaxonomyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
