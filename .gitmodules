@@ -1,0 +1,3 @@
+[submodule "drupal-ios-sdk"]
+	path = drupal-ios-sdk
+	url = ../drupal-ios-sdk
