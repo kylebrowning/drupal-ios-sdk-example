@@ -8,15 +8,17 @@
 
 #import "NodeViewController.h"
 #import "DIOSNode.h"
-
+#import "DIOSComment.h"
+#import "DIOSExampleAppDelegate.h"
 @implementation NodeViewController
 
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  session = [[DIOSConnect alloc] init];
+  DIOSExampleAppDelegate *delegate = (DIOSExampleAppDelegate*)[[UIApplication sharedApplication] delegate];
+  session = [delegate session];
 }
-- (IBAction) save {
+- (IBAction) saveNode {
   DIOSNode *node = [[DIOSNode alloc] initWithSession:session];
   NSMutableDictionary *nodeData = [[NSMutableDictionary alloc] init];
   [nodeData setObject:[bodySaveField text] forKey:@"body"];
@@ -30,18 +32,46 @@
   [self displayDebugDIOS:node];
   [node release];
 }
-- (IBAction) get {
+
+- (IBAction) getNode {
   DIOSNode *node = [[DIOSNode alloc] initWithSession:session];
   [node nodeGet:[nidGetField text]];
   [self displayDebugDIOS:node];
   [node release];  
 }
-- (IBAction) delete {
+
+- (IBAction) deleteNode {
   DIOSNode *node = [[DIOSNode alloc] initWithSession:session];
   [node nodeDelete:[nidDeleteField text]];
   [self displayDebugDIOS:node];
   [node release];  
 }
+
+- (IBAction) addComment {
+  DIOSComment *comment = [[DIOSComment alloc] initWithSession:session];
+  [comment addComment:[nidCommentAddField text] subject:[subjectCommentAddField text] body:[bodyCommentAddField text]];
+  [self displayDebugDIOS:comment];
+  [comment release]; 
+}
+- (IBAction) getComment {
+  DIOSComment *comment = [[DIOSComment alloc] initWithSession:session];
+  [comment getComment:[nidCommentGetField text]];
+  [self displayDebugDIOS:comment];
+  [comment release]; 
+}
+- (IBAction) getCommentCount {
+  DIOSComment *comment = [[DIOSComment alloc] initWithSession:session];
+  [comment getCommentCountForNid:[nidCommentCountField text]];
+  [self displayDebugDIOS:comment];
+  [comment release]; 
+}
+- (IBAction) getCommentCountNew {
+  DIOSComment *comment = [[DIOSComment alloc] initWithSession:session];
+  [comment getCommentCountNewForNid:[nidCommentCountField text]];
+  [self displayDebugDIOS:comment];
+  [comment release];   
+}
+
 - (void) displayDebugDIOS:(id)aDIOSConnect {
   [responseStatus setText:[aDIOSConnect responseStatusMessage]];
   [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect connResult]]];

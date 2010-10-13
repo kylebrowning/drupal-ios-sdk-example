@@ -9,7 +9,7 @@
 #import "FileViewController.h"
 #import "DIOSFile.h"
 #import "NSData+Base64.h"
-
+#import "DIOSExampleAppDelegate.h"
 @implementation FileViewController
 @synthesize imageData;
 
@@ -17,7 +17,8 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
   [super viewDidLoad];
-  session = [[DIOSConnect alloc] init];
+  DIOSExampleAppDelegate *delegate = (DIOSExampleAppDelegate*)[[UIApplication sharedApplication] delegate];
+  session = [delegate session];
 }
 
 -(IBAction) getFile:(id) sender {

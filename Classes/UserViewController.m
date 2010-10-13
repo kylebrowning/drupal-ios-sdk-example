@@ -8,7 +8,7 @@
 
 #import "UserViewController.h"
 #import "DIOSUser.h"
-
+#import "DIOSExampleAppDelegate.h"
 @implementation UserViewController
 
 
@@ -16,7 +16,8 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
   [super viewDidLoad];
-  session = [[DIOSConnect alloc] init];
+  DIOSExampleAppDelegate *delegate = (DIOSExampleAppDelegate*)[[UIApplication sharedApplication] delegate];
+  session = [delegate session];
 }
 
 -(IBAction) login {

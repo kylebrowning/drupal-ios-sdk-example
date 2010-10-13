@@ -16,14 +16,24 @@
   IBOutlet UITextField *typeSaveField;
   IBOutlet UITextField *nidDeleteField;
   IBOutlet UITextField *nidGetField;
+  IBOutlet UITextField *subjectCommentAddField;
+  IBOutlet UITextField *bodyCommentAddField;
+  IBOutlet UITextField *nidCommentAddField;
+  IBOutlet UITextField *nidCommentGetField;  
+  IBOutlet UITextField *nidCommentCountField;
   IBOutlet UILabel *responseStatus;
   IBOutlet UITextView *responseView;
   IBOutlet UILabel *urlLabel;
   DIOSConnect *session;
 }
 
-- (IBAction) save;
-- (IBAction) delete;
-- (IBAction) get;
+- (IBAction) saveNode;
+- (IBAction) deleteNode;
+- (IBAction) getNode;
+
+- (IBAction) addComment;
+- (IBAction) getComment;
+- (IBAction) getCommentCount;
+- (IBAction) getCommentCountNew;
 - (void) displayDebugDIOS:(id)aDIOSConnect;
 @end

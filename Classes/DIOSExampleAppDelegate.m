@@ -7,13 +7,13 @@
 //
 
 #import "DIOSExampleAppDelegate.h"
-
+#import "DIOSConnect.h"
 
 @implementation DIOSExampleAppDelegate
 
 @synthesize window;
 @synthesize tabBarController;
-
+@synthesize session;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -25,7 +25,7 @@
     // Add the tab bar controller's current view as a subview of the window
     [window addSubview:tabBarController.view];
     [window makeKeyAndVisible];
-    
+    session = [[DIOSConnect alloc] init];
     return YES;
 }
 
