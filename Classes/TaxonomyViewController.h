@@ -12,7 +12,7 @@
 @interface TaxonomyViewController : UIViewController {
   DIOSConnect *session;
   IBOutlet UITextField *vidGetField;
-  IBOutlet UITextField *nidSelectField;
+  IBOutlet UITextField *tidSelectField;
   IBOutlet UILabel *responseStatus;
   IBOutlet UITextView *responseView;
   IBOutlet UILabel *urlLabel;

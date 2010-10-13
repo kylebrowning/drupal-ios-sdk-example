@@ -25,7 +25,7 @@
 }
 - (IBAction) selectNodes {
   DIOSTaxonomy *taxonomy = [[DIOSTaxonomy alloc] init];
-  [taxonomy selectNodes:[nidSelectField text]];
+  [taxonomy selectNodes:[tidSelectField text]];
   [self displayDebugDIOS:taxonomy];
   [taxonomy release];  
 }
