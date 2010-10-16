@@ -22,13 +22,12 @@
   DIOSNode *node = [[DIOSNode alloc] initWithSession:session];
   NSMutableDictionary *nodeData = [[NSMutableDictionary alloc] init];
   //In Drupal 7 body is required to be setup a tad bit differently.
-  
-  NSDictionary *bodyValues = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[bodySaveField text], nil] forKeys:[NSArray arrayWithObjects:@"value", nil]];
-  NSDictionary *languageDict = [NSDictionary dictionaryWithObject:[NSArray arrayWithObject:bodyValues] forKey:DRUPAL_LANGUAGE];
-  [nodeData setObject:languageDict forKey:@"body"];
-  [nodeData setObject:DRUPAL_LANGUAGE forKey:@"language"];
-  //If running drupal 6 comment out lines 26-29 and uncomment these lines below
-  //[nodeData setObject:[bodySaveField text] forKey:@"body"];
+  #if running drupal 7 uncomment these lines  
+  //NSDictionary *bodyValues = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[bodySaveField text], nil] forKeys:[NSArray arrayWithObjects:@"value", nil]];
+  //NSDictionary *languageDict = [NSDictionary dictionaryWithObject:[NSArray arrayWithObject:bodyValues] forKey:DRUPAL_LANGUAGE];
+  //[nodeData setObject:languageDict forKey:@"body"];
+  //[nodeData setObject:DRUPAL_LANGUAGE forKey:@"language"];
+  [nodeData setObject:[bodySaveField text] forKey:@"body"];
   [nodeData setObject:[typeSaveField text] forKey:@"type"];
   [nodeData setObject:[titleSaveField text] forKey:@"title"];
   [nodeData setObject:[nidSaveField text] forKey:@"nid"];
