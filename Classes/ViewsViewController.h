@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DIOSConnect.h"
-
+#import "DIOSExampleAppDelegate.h"
 @interface ViewsViewController : UIViewController {
   IBOutlet UITextField *viewNameField;
   IBOutlet UITextField *displayNameField;
@@ -16,7 +16,7 @@
   IBOutlet UILabel *responseStatus;
   IBOutlet UITextView *responseView;
   IBOutlet UILabel *urlLabel;
-  DIOSConnect *session;
+  DIOSExampleAppDelegate *delegate;
 }
 
 - (IBAction) getView;

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DIOSConnect.h"
-
+#import "DIOSExampleAppDelegate.h"
 @interface FileViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>{
   IBOutlet UIImageView *imageView;
   IBOutlet UIImageView *imageViewGet;
@@ -20,7 +20,7 @@
   IBOutlet UILabel *responseStatus;
   IBOutlet UITextView *responseView;
   IBOutlet UILabel *urlLabel;
-  DIOSConnect *session;
+  DIOSExampleAppDelegate *delegate;
 }
 @property (nonatomic, retain) NSData *imageData;
 

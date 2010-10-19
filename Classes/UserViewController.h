@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DIOSConnect.h"
-
+#import "DIOSExampleAppDelegate.h"
 @interface UserViewController : UIViewController {
   IBOutlet UITextField *usernameLoginField;
   IBOutlet UITextField *passwordLoginField;
@@ -21,7 +21,7 @@
   IBOutlet UILabel *responseStatus;
   IBOutlet UITextView *responseView;
   IBOutlet UILabel *urlLabel;
-  DIOSConnect *session;
+  DIOSExampleAppDelegate *delegate;
 }
 -(IBAction) login;
 -(IBAction) logout;

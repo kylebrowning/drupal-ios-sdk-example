@@ -17,13 +17,12 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
   [super viewDidLoad];
-  DIOSExampleAppDelegate *delegate = (DIOSExampleAppDelegate*)[[UIApplication sharedApplication] delegate];
-  session = [delegate session];
+  delegate = (DIOSExampleAppDelegate*)[[UIApplication sharedApplication] delegate];
 }
 
 -(IBAction) getFile:(id) sender {
   [imageViewGet setImage:nil];
-  DIOSFile *aFile = [[DIOSFile alloc] initWithSession:session];
+  DIOSFile *aFile = [[DIOSFile alloc] initWithSession:[delegate session]];
   [aFile fileGet:[fileIdField text]];
   NSData *returnedImageData = [NSData dataFromBase64String:[[[aFile connResult] objectForKey:@"#data"] objectForKey:@"file"]];
   [imageViewGet setImage:[UIImage imageWithData:returnedImageData]];
@@ -32,7 +31,7 @@
   [aFile release];
 }
 -(IBAction) getNodeFiles:(id) sender {
-  DIOSFile *aFile = [[DIOSFile alloc] initWithSession:session];
+  DIOSFile *aFile = [[DIOSFile alloc] initWithSession:[delegate session]];
   [aFile fileGetNodeFiles:[nodeIdField text]];
   [self displayDebugDIOS:aFile];
   [aFile release];
@@ -53,7 +52,7 @@
   [uploadButton setHidden:NO];
 }
 -(IBAction) uploadPhoto {
-  DIOSFile *aFile = [[DIOSFile alloc] initWithSession:session];
+  DIOSFile *aFile = [[DIOSFile alloc] initWithSession:[delegate session]];
   NSMutableDictionary *file = [[NSMutableDictionary alloc] init];
   
   NSString *base64Image = [imageData base64EncodedString];

@@ -16,24 +16,31 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
   [super viewDidLoad];
-  DIOSExampleAppDelegate *delegate = (DIOSExampleAppDelegate*)[[UIApplication sharedApplication] delegate];
-  session = [delegate session];
+  delegate = (DIOSExampleAppDelegate*)[[UIApplication sharedApplication] delegate];
 }
 
 -(IBAction) login {
-  DIOSUser *user = [[DIOSUser alloc] initWithSession:session];
+  DIOSUser *user = [[DIOSUser alloc] initWithSession:[delegate session]];
   [user loginWithUsername:[usernameLoginField text] andPassword:[passwordLoginField text]];
+  //Since we logged in our main session needs to know the new user information
+  if ([[[[user connResult] objectForKey:@"#data"] objectForKey:@"user"] objectForKey:@"uid"]) {
+    [delegate setSession:user];
+  }
   [self displayDebugDIOS:user];
   [user release];
 }
 -(IBAction) logout {
-  DIOSUser *user = [[DIOSUser alloc] initWithSession:session];
+  DIOSUser *user = [[DIOSUser alloc] initWithSession:[delegate session]];
   [user logout];
+  [self displayDebugDIOS:user];
+  if ([[user connResult] objectForKey:@"#data"]) {
+    [delegate setSession:user];
+  }
   [self displayDebugDIOS:user];
   [user release];
 }
 -(IBAction) save {
-  DIOSUser *user = [[DIOSUser alloc] initWithSession:session];
+  DIOSUser *user = [[DIOSUser alloc] initWithSession:[delegate session]];
   NSMutableDictionary *userData = [[NSMutableDictionary alloc] init];
   [userData setObject:[usernameSaveField text] forKey:@"name"];
   [userData setObject:[passwordSaveField text] forKey:@"pass"];
@@ -44,14 +51,14 @@
   [user release];
 }
 -(IBAction) get {
-  DIOSUser *user = [[DIOSUser alloc] initWithSession:session];
+  DIOSUser *user = [[DIOSUser alloc] initWithSession:[delegate session]];
   [user userGet:[uidGetField text]];
   [self displayDebugDIOS:user];
   [user release];
 }
 
 -(IBAction) delete {
-  DIOSUser *user = [[DIOSUser alloc] initWithSession:session];
+  DIOSUser *user = [[DIOSUser alloc] initWithSession:[delegate session]];
   [user userDelete:[uidDeleteField text]];
   [self displayDebugDIOS:user];
   [user release];  

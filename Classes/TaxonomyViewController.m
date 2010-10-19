@@ -13,18 +13,18 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  DIOSExampleAppDelegate *delegate = (DIOSExampleAppDelegate*)[[UIApplication sharedApplication] delegate];
-  session = [delegate session];
+  delegate = (DIOSExampleAppDelegate*)[[UIApplication sharedApplication] delegate];
 }
 
 - (IBAction) getTree {
-  DIOSTaxonomy *taxonomy = [[DIOSTaxonomy alloc] init];
+
+  DIOSTaxonomy *taxonomy = [[DIOSTaxonomy alloc] initWithSession:[delegate session]];
   [taxonomy getTree:[vidGetField text]];
   [self displayDebugDIOS:taxonomy];
   [taxonomy release];
 }
 - (IBAction) selectNodes {
-  DIOSTaxonomy *taxonomy = [[DIOSTaxonomy alloc] init];
+  DIOSTaxonomy *taxonomy = [[DIOSTaxonomy alloc] initWithSession:[delegate session]];
   [taxonomy selectNodes:[tidSelectField text]];
   [self displayDebugDIOS:taxonomy];
   [taxonomy release];  

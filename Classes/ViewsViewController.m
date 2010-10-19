@@ -15,12 +15,11 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
  [super viewDidLoad];
-  DIOSExampleAppDelegate *delegate = (DIOSExampleAppDelegate*)[[UIApplication sharedApplication] delegate];
-  session = [delegate session];
+  delegate = (DIOSExampleAppDelegate*)[[UIApplication sharedApplication] delegate];
 }
 
 - (IBAction) getView {
-  DIOSViews *views = [[DIOSViews alloc] initWithSession:session];
+  DIOSViews *views = [[DIOSViews alloc] initWithSession:[delegate session]];
   [views initViews];
   [views addParam:[viewNameField text] forKey:@"view_name"];
   [views addParam:[NSArray arrayWithObjects:[argsField text], nil] forKey:@"args"];

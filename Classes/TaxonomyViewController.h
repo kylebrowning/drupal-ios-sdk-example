@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DIOSConnect.h"
-
+#import "DIOSExampleAppDelegate.h"
 @interface TaxonomyViewController : UIViewController {
   DIOSConnect *session;
   IBOutlet UITextField *vidGetField;
@@ -16,6 +16,7 @@
   IBOutlet UILabel *responseStatus;
   IBOutlet UITextView *responseView;
   IBOutlet UILabel *urlLabel;
+  DIOSExampleAppDelegate *delegate;
 }
 - (IBAction) getTree;
 - (IBAction) selectNodes;

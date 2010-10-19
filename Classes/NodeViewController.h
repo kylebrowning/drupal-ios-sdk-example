@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DIOSConnect.h"
-
+#import "DIOSExampleAppDelegate.h"
 @interface NodeViewController : UIViewController {
   IBOutlet UITextField *titleSaveField;
   IBOutlet UITextField *bodySaveField;
@@ -24,7 +24,7 @@
   IBOutlet UILabel *responseStatus;
   IBOutlet UITextView *responseView;
   IBOutlet UILabel *urlLabel;
-  DIOSConnect *session;
+  DIOSExampleAppDelegate *delegate;
 }
 
 - (IBAction) saveNode;

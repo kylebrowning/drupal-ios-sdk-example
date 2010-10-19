@@ -9,20 +9,18 @@
 #import "NodeViewController.h"
 #import "DIOSNode.h"
 #import "DIOSComment.h"
-#import "DIOSExampleAppDelegate.h"
 @implementation NodeViewController
 
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  DIOSExampleAppDelegate *delegate = (DIOSExampleAppDelegate*)[[UIApplication sharedApplication] delegate];
-  session = [delegate session];
+  delegate = (DIOSExampleAppDelegate*)[[UIApplication sharedApplication] delegate];
 }
 - (IBAction) saveNode {
-  DIOSNode *node = [[DIOSNode alloc] initWithSession:session];
+  DIOSNode *node = [[DIOSNode alloc] initWithSession:[delegate session]];
   NSMutableDictionary *nodeData = [[NSMutableDictionary alloc] init];
   //In Drupal 7 body is required to be setup a tad bit differently.
-  #if running drupal 7 uncomment these lines  
+  //if running drupal 7 uncomment these lines  
   //NSDictionary *bodyValues = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[bodySaveField text], nil] forKeys:[NSArray arrayWithObjects:@"value", nil]];
   //NSDictionary *languageDict = [NSDictionary dictionaryWithObject:[NSArray arrayWithObject:bodyValues] forKey:DRUPAL_LANGUAGE];
   //[nodeData setObject:languageDict forKey:@"body"];
@@ -34,10 +32,10 @@
   [nodeData setObject:@"now" forKey:@"date"];
   [nodeData setObject:@"1" forKey:@"status"];
   [nodeData setObject:@"1" forKey:@"status"];
-  if ([[[[session userInfo] objectForKey:@"user"] objectForKey:@"uid"] isEqualToNumber:[NSNumber numberWithInt:0]]) {
-   [nodeData setObject:@"anonymous" forKey:@"name"];
+  if ([[[[delegate session] userInfo] objectForKey:@"uid"] isEqualToNumber:[NSNumber numberWithInt:0]]) {
+   [nodeData setObject:@"" forKey:@"name"];
   } else {
-    [nodeData setObject:[[session userInfo] objectForKey:@"name"] forKey:@"name"];
+    [nodeData setObject:[[[delegate session] userInfo] objectForKey:@"name"] forKey:@"name"];
   }
   [node nodeSave:nodeData];
   [self displayDebugDIOS:node];
@@ -45,39 +43,39 @@
 }
 
 - (IBAction) getNode {
-  DIOSNode *node = [[DIOSNode alloc] initWithSession:session];
+  DIOSNode *node = [[DIOSNode alloc] initWithSession:[delegate session]];
   [node nodeGet:[nidGetField text]];
   [self displayDebugDIOS:node];
   [node release];  
 }
 
 - (IBAction) deleteNode {
-  DIOSNode *node = [[DIOSNode alloc] initWithSession:session];
+  DIOSNode *node = [[DIOSNode alloc] initWithSession:[delegate session]];
   [node nodeDelete:[nidDeleteField text]];
   [self displayDebugDIOS:node];
   [node release];  
 }
 
 - (IBAction) addComment {
-  DIOSComment *comment = [[DIOSComment alloc] initWithSession:session];
+  DIOSComment *comment = [[DIOSComment alloc] initWithSession:[delegate session]];
   [comment addComment:[nidCommentAddField text] subject:[subjectCommentAddField text] body:[bodyCommentAddField text]];
   [self displayDebugDIOS:comment];
   [comment release]; 
 }
 - (IBAction) getComment {
-  DIOSComment *comment = [[DIOSComment alloc] initWithSession:session];
+  DIOSComment *comment = [[DIOSComment alloc] initWithSession:[delegate session]];
   [comment getComment:[nidCommentGetField text]];
   [self displayDebugDIOS:comment];
   [comment release]; 
 }
 - (IBAction) getCommentCount {
-  DIOSComment *comment = [[DIOSComment alloc] initWithSession:session];
+  DIOSComment *comment = [[DIOSComment alloc] initWithSession:[delegate session]];
   [comment getCommentCountForNid:[nidCommentCountField text]];
   [self displayDebugDIOS:comment];
   [comment release]; 
 }
 - (IBAction) getCommentCountNew {
-  DIOSComment *comment = [[DIOSComment alloc] initWithSession:session];
+  DIOSComment *comment = [[DIOSComment alloc] initWithSession:[delegate session]];
   [comment getCommentCountNewForNid:[nidCommentCountField text]];
   [self displayDebugDIOS:comment];
   [comment release];   
