@@ -65,9 +65,14 @@
   [aFile release];
 }
 - (void) displayDebugDIOS:(id)aDIOSConnect {
-  
   [responseStatus setText:[aDIOSConnect responseStatusMessage]];
-  [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect connResult]]];
+  if([aDIOSConnect connResult] == nil) {
+    if([aDIOSConnect respondsToSelector:@selector(error)]) {
+      [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect error]]]; 
+    }
+  } else {
+    [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect connResult]]];
+  }
   [urlLabel setText:[aDIOSConnect methodUrl]];
 }
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

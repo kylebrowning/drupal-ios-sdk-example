@@ -1,4 +1,4 @@
-    //
+//
 //  NodeViewController.m
 //  DIOSExample
 //
@@ -33,7 +33,9 @@
   [nodeData setObject:@"1" forKey:@"status"];
   [nodeData setObject:@"1" forKey:@"status"];
   if ([[[[delegate session] userInfo] objectForKey:@"uid"] isEqualToNumber:[NSNumber numberWithInt:0]]) {
-   [nodeData setObject:@"" forKey:@"name"];
+    [nodeData setObject:@"" forKey:@"name"];
+  } else if([[delegate session] userInfo] == nil){
+    [nodeData setObject:@"" forKey:@"name"];
   } else {
     [nodeData setObject:[[[delegate session] userInfo] objectForKey:@"name"] forKey:@"name"];
   }
@@ -83,32 +85,38 @@
 
 - (void) displayDebugDIOS:(id)aDIOSConnect {
   [responseStatus setText:[aDIOSConnect responseStatusMessage]];
-  [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect connResult]]];
+  if([aDIOSConnect connResult] == nil) {
+    if([aDIOSConnect respondsToSelector:@selector(error)]) {
+      [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect error]]]; 
+    }
+  } else {
+    [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect connResult]]];
+  }
   [urlLabel setText:[aDIOSConnect methodUrl]];
 }
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Overriden to allow any orientation.
-    return NO;
+  // Overriden to allow any orientation.
+  return NO;
 }
 
 
 - (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
+  // Releases the view if it doesn't have a superview.
+  [super didReceiveMemoryWarning];
+  
+  // Release any cached data, images, etc that aren't in use.
 }
 
 
 - (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+  [super viewDidUnload];
+  // Release any retained subviews of the main view.
+  // e.g. self.myOutlet = nil;
 }
 
 
 - (void)dealloc {
-    [super dealloc];
+  [super dealloc];
 }
 
 
