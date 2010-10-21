@@ -9,6 +9,7 @@
 #import "NodeViewController.h"
 #import "DIOSNode.h"
 #import "DIOSComment.h"
+#import "DIOSFile.h"
 @implementation NodeViewController
 
 
@@ -31,6 +32,42 @@
   [nodeData setObject:[nidSaveField text] forKey:@"nid"];
   [nodeData setObject:@"now" forKey:@"date"];
   [nodeData setObject:@"1" forKey:@"status"];
+  [nodeData setObject:@"1" forKey:@"status"];
+  if ([[[[delegate session] userInfo] objectForKey:@"uid"] isEqualToNumber:[NSNumber numberWithInt:0]]) {
+    [nodeData setObject:@"" forKey:@"name"];
+  } else if([[delegate session] userInfo] == nil){
+    [nodeData setObject:@"" forKey:@"name"];
+  } else {
+    [nodeData setObject:[[[delegate session] userInfo] objectForKey:@"name"] forKey:@"name"];
+  }
+  [node nodeSave:nodeData];
+  [self displayDebugDIOS:node];
+  [node release];
+}
+
+- (IBAction)saveCCKNode:(id)sender {
+  DIOSNode *node = [[DIOSNode alloc] initWithSession:[delegate session]];
+  NSMutableDictionary *nodeData = [[NSMutableDictionary alloc] init];
+  
+  //Example adding information to a CCK TextField
+  NSDictionary *fieldBodyValue = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[ipadBodyField text], nil] forKeys:[NSArray arrayWithObjects:@"value", nil]];
+  NSArray *fieldBodyArray = [NSArray arrayWithObject:fieldBodyValue];
+  [nodeData setObject:fieldBodyArray forKey:@"field_ipad_body"];
+  
+  //Example File Adding to Node
+  //Note: This is just to prove as an example, you shouldnt do a fileGet unless absolutely necessary
+  //This information should be available to you when you are creting a node for the first time.
+  //Just for this example (and to save space in the Interface) I hardcoded this fileId, and use getFile in order to obtain
+  //the necessary information
+  DIOSFile *file = [[DIOSFile alloc] initWithSession:[delegate session]];
+  [file fileGet:@"22"];
+  [nodeData setObject:[NSArray arrayWithObject:[[file connResult] objectForKey:@"#data"]] forKey:@"field_image"];
+  
+  
+  [nodeData setObject:[typeCCKSaveField text] forKey:@"type"];
+  [nodeData setObject:[titleCCKSaveField text] forKey:@"title"];
+  [nodeData setObject:[nidCCKSaveField text] forKey:@"nid"];
+  [nodeData setObject:@"now" forKey:@"date"];
   [nodeData setObject:@"1" forKey:@"status"];
   if ([[[[delegate session] userInfo] objectForKey:@"uid"] isEqualToNumber:[NSNumber numberWithInt:0]]) {
     [nodeData setObject:@"" forKey:@"name"];
@@ -116,6 +153,9 @@
 
 
 - (void)dealloc {
+  [titleCCKSaveField release];
+  [typeCCKSaveField release];
+  [nidCCKSaveField release];
   [super dealloc];
 }
 

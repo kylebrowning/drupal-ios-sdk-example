@@ -21,13 +21,19 @@
   IBOutlet UITextField *nidCommentAddField;
   IBOutlet UITextField *nidCommentGetField;  
   IBOutlet UITextField *nidCommentCountField;
+  IBOutlet UITextField *ipadBodyField;
   IBOutlet UILabel *responseStatus;
   IBOutlet UITextView *responseView;
   IBOutlet UILabel *urlLabel;
+  IBOutlet UITextField *titleCCKSaveField;
+  IBOutlet UITextField *typeCCKSaveField;
+  IBOutlet UITextField *nidCCKSaveField;
+
   DIOSExampleAppDelegate *delegate;
 }
 
 - (IBAction) saveNode;
+- (IBAction) saveCCKNode:(id)sender;
 - (IBAction) deleteNode;
 - (IBAction) getNode;
 
