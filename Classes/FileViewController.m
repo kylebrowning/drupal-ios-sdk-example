@@ -25,6 +25,7 @@
   DIOSFile *aFile = [[DIOSFile alloc] initWithSession:[delegate session]];
   [aFile fileGet:[fileIdField text]];
   NSData *returnedImageData = [NSData dataFromBase64String:[[[aFile connResult] objectForKey:@"#data"] objectForKey:@"file"]];
+  
   [imageViewGet setImage:[UIImage imageWithData:returnedImageData]];
   [responseStatus setText:[aFile responseStatusMessage]];
   [urlLabel setText:[aFile methodUrl]];
@@ -59,21 +60,34 @@
   [file setObject:base64Image forKey:@"file"];
   [file setObject:@"sites/default/files/temp.jpg" forKey:@"filepath"];
   [file setObject:@"temp.jpg" forKey:@"filename"];
-  [aFile fileSave:file];  
+	NSString *timestamp = [NSString stringWithFormat:@"%d", (long)[[NSDate date] timeIntervalSince1970]];
+  [file setObject:timestamp forKey:@"timestamp"];
+  NSString *fileSize = [NSString stringWithFormat:@"%d", [imageData length]];
+  [file setObject:fileSize forKey:@"filesize"];
+  if ([[[[delegate session] userInfo] objectForKey:@"uid"] isEqualToNumber:[NSNumber numberWithInt:0]]) {
+    [file setObject:@"0" forKey:@"uid"];
+  } else if([[delegate session] userInfo] == nil){
+    [file setObject:@"0" forKey:@"uid"];
+  } else {
+    [file setObject:[[[delegate session] userInfo] objectForKey:@"uid"] forKey:@"uid"];
+  }
+  [aFile fileSave:file];
   [self displayDebugDIOS:aFile];
   imageView.image = nil;
+  [timestamp release];
+  [fileSize release];
   [aFile release];
 }
 - (void) displayDebugDIOS:(id)aDIOSConnect {
-    [responseStatus setText:[aDIOSConnect responseStatusMessage]];
-    if([aDIOSConnect connResult] == nil) {
-        if([aDIOSConnect respondsToSelector:@selector(error)]) {
-            [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect error]]]; 
-        }
-    } else {
-        [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect connResult]]];
+  [responseStatus setText:[aDIOSConnect responseStatusMessage]];
+  if([aDIOSConnect connResult] == nil) {
+    if([aDIOSConnect respondsToSelector:@selector(error)]) {
+      [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect error]]]; 
     }
-    [urlLabel setText:[aDIOSConnect methodUrl]];
+  } else {
+    [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect connResult]]];
+  }
+  [urlLabel setText:[aDIOSConnect methodUrl]];
 }
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
   // Overriden to allow any orientation.

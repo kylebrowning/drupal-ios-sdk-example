@@ -53,6 +53,7 @@
 		1D3623240D0F684500981E51 /* DIOSExampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSExampleAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* DIOSExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSExampleAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* DIOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DIOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DAC10021270A65600754D3E /* DIOSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSConfig.h; sourceTree = "<group>"; };
 		1DD0844F1263AE80007F0552 /* ViewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewsViewController.h; sourceTree = "<group>"; };
 		1DD084501263AE80007F0552 /* ViewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewsViewController.m; sourceTree = "<group>"; };
 		1DD084511263AE80007F0552 /* ViewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewsViewController.xib; path = Classes/ViewsViewController.xib; sourceTree = "<group>"; };
@@ -174,6 +175,7 @@
 		1DD81F58125FC4EE00707724 /* drupal-ios-sdk */ = {
 			isa = PBXGroup;
 			children = (
+				1DAC10021270A65600754D3E /* DIOSConfig.h */,
 				1DD087351263EA36007F0552 /* NSData_Base64 */,
 				1DD81F7E125FC4EE00707724 /* DIOSComment.h */,
 				1DD81F7F125FC4EE00707724 /* DIOSComment.m */,

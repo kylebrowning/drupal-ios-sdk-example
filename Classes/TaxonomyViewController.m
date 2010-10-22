@@ -31,15 +31,15 @@
 }
 
 - (void) displayDebugDIOS:(id)aDIOSConnect {
-    [responseStatus setText:[aDIOSConnect responseStatusMessage]];
-    if([aDIOSConnect connResult] == nil) {
-        if([aDIOSConnect respondsToSelector:@selector(error)]) {
-            [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect error]]]; 
-        }
-    } else {
-        [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect connResult]]];
+  [responseStatus setText:[aDIOSConnect responseStatusMessage]];
+  if([aDIOSConnect connResult] == nil) {
+    if([aDIOSConnect respondsToSelector:@selector(error)]) {
+      [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect error]]]; 
     }
-    [urlLabel setText:[aDIOSConnect methodUrl]];
+  } else {
+    [responseView setText:[NSString stringWithFormat:@"%@", [aDIOSConnect connResult]]];
+  }
+  [urlLabel setText:[aDIOSConnect methodUrl]];
 }
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Overriden to allow any orientation.

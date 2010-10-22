@@ -32,11 +32,13 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "drupal-ios-sdk/DIOSConnect.m"
-         timestampString = "309214773.092887"
+         timestampString = "309384508.202342"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "65"
-         endingLineNumber = "65">
+         startingLineNumber = "168"
+         endingLineNumber = "168"
+         landmarkName = "-runMethod"
+         landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
