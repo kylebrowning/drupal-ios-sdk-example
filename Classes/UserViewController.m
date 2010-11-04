@@ -33,7 +33,7 @@
   DIOSUser *user = [[DIOSUser alloc] initWithSession:[delegate session]];
   [user logout];
   [self displayDebugDIOS:user];
-  if ([[user connResult] objectForKey:@"#data"]) {
+  if ([user connResult]) {
     [delegate setSession:user];
   }
   [self displayDebugDIOS:user];

@@ -10,6 +10,7 @@
 #import "DIOSNode.h"
 #import "DIOSComment.h"
 #import "DIOSFile.h"
+#import "DIOSConfig.h"
 @implementation NodeViewController
 
 
@@ -20,26 +21,25 @@
 - (IBAction) saveNode {
   DIOSNode *node = [[DIOSNode alloc] initWithSession:[delegate session]];
   NSMutableDictionary *nodeData = [[NSMutableDictionary alloc] init];
+  // Drupal 7 Version
   //In Drupal 7 body is required to be setup a tad bit differently.
   //if running drupal 7 uncomment these lines  
-  //NSDictionary *bodyValues = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[bodySaveField text], nil] forKeys:[NSArray arrayWithObjects:@"value", nil]];
-  //NSDictionary *languageDict = [NSDictionary dictionaryWithObject:[NSArray arrayWithObject:bodyValues] forKey:DRUPAL_LANGUAGE];
-  //[nodeData setObject:languageDict forKey:@"body"];
-  //[nodeData setObject:DRUPAL_LANGUAGE forKey:@"language"];
-  [nodeData setObject:[bodySaveField text] forKey:@"body"];
+  NSDictionary *bodyValues = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[bodySaveField text], nil] forKeys:[NSArray arrayWithObjects:@"value", nil]];
+  NSDictionary *languageDict = [NSDictionary dictionaryWithObject:[NSArray arrayWithObject:bodyValues] forKey:DRUPAL_LANGUAGE];
+  [nodeData setObject:languageDict forKey:@"body"];
+  [nodeData setObject:DRUPAL_LANGUAGE forKey:@"language"];
   [nodeData setObject:[typeSaveField text] forKey:@"type"];
   [nodeData setObject:[titleSaveField text] forKey:@"title"];
-  [nodeData setObject:[nidSaveField text] forKey:@"nid"];
+   
+  /* Drupal 6 Version
+    [nodeData setObject:[bodySaveField text] forKey:@"body"];
+    [nodeData setObject:[typeSaveField text] forKey:@"type"];
+    [nodeData setObject:[titleSaveField text] forKey:@"title"];
+    [nodeData setObject:[nidSaveField text] forKey:@"nid"];
+   */
   [nodeData setObject:@"now" forKey:@"date"];
   [nodeData setObject:@"1" forKey:@"status"];
   [nodeData setObject:@"1" forKey:@"status"];
-  if ([[[[delegate session] userInfo] objectForKey:@"uid"] isEqualToNumber:[NSNumber numberWithInt:0]]) {
-    [nodeData setObject:@"" forKey:@"name"];
-  } else if([[delegate session] userInfo] == nil){
-    [nodeData setObject:@"" forKey:@"name"];
-  } else {
-    [nodeData setObject:[[[delegate session] userInfo] objectForKey:@"name"] forKey:@"name"];
-  }
   [node nodeSave:nodeData];
   [self displayDebugDIOS:node];
   [node release];
