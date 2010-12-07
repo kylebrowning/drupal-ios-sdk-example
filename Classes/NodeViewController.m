@@ -24,19 +24,19 @@
   // Drupal 7 Version
   //In Drupal 7 body is required to be setup a tad bit differently.
   //if running drupal 7 uncomment these lines  
-  /*
+  
   NSDictionary *bodyValues = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[bodySaveField text], nil] forKeys:[NSArray arrayWithObjects:@"value", nil]];
   NSDictionary *languageDict = [NSDictionary dictionaryWithObject:[NSArray arrayWithObject:bodyValues] forKey:DRUPAL_LANGUAGE];
   [nodeData setObject:languageDict forKey:@"body"];
   [nodeData setObject:DRUPAL_LANGUAGE forKey:@"language"];
   [nodeData setObject:[typeSaveField text] forKey:@"type"];
   [nodeData setObject:[titleSaveField text] forKey:@"title"];
-   */
+   
   // Drupal 6 Version
-    [nodeData setObject:[bodySaveField text] forKey:@"body"];
-    [nodeData setObject:[typeSaveField text] forKey:@"type"];
-    [nodeData setObject:[titleSaveField text] forKey:@"title"];
-    [nodeData setObject:[nidSaveField text] forKey:@"nid"];
+//    [nodeData setObject:[bodySaveField text] forKey:@"body"];
+//    [nodeData setObject:[typeSaveField text] forKey:@"type"];
+//    [nodeData setObject:[titleSaveField text] forKey:@"title"];
+//    [nodeData setObject:[nidSaveField text] forKey:@"nid"];
   
   [nodeData setObject:@"now" forKey:@"date"];
   [nodeData setObject:@"1" forKey:@"status"];
