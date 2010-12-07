@@ -24,7 +24,7 @@
   [imageViewGet setImage:nil];
   DIOSFile *aFile = [[DIOSFile alloc] initWithSession:[delegate session]];
   [aFile fileGet:[fileIdField text]];
-  NSData *returnedImageData = [NSData dataFromBase64String:[[[aFile connResult] objectForKey:@"#data"] objectForKey:@"file"]];
+  NSData *returnedImageData = [NSData dataFromBase64String:[[aFile connResult] objectForKey:@"file"]];
   
   [imageViewGet setImage:[UIImage imageWithData:returnedImageData]];
   [responseStatus setText:[aFile responseStatusMessage]];
