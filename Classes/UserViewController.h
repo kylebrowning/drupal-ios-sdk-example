@@ -13,7 +13,8 @@
   IBOutlet UITextField *usernameLoginField;
   IBOutlet UITextField *passwordLoginField;
   IBOutlet UITextField *usernameSaveField;
-  IBOutlet UITextField *passwordSaveField;
+  IBOutlet UITextField *newPasswordSaveField;
+  IBOutlet UITextField *curPasswordSaveField;
   IBOutlet UITextField *emailSaveField;
   IBOutlet UITextField *uidSaveField;
   IBOutlet UITextField *uidGetField;

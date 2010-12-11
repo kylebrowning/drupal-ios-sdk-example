@@ -43,8 +43,10 @@
   DIOSUser *user = [[DIOSUser alloc] initWithSession:[delegate session]];
   NSMutableDictionary *userData = [[NSMutableDictionary alloc] init];
   [userData setObject:[usernameSaveField text] forKey:@"name"];
-  [userData setObject:[passwordSaveField text] forKey:@"pass"];
+  [userData setObject:[newPasswordSaveField text] forKey:@"pass"];
+  [userData setObject:[curPasswordSaveField text] forKey:@"current_pass"];
   [userData setObject:[emailSaveField text] forKey:@"mail"];
+  if(![[uidSaveField text] isEqualToString:@""])
   [userData setObject:[uidSaveField text] forKey:@"uid"];
   [user userSave:userData];
   [self displayDebugDIOS:user];
