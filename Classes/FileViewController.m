@@ -59,8 +59,8 @@
   NSString *base64Image = [imageData base64EncodedString];
   [file setObject:base64Image forKey:@"file"];
   //Uncomment this line for 6.x
-//  [file setObject:@"sites/default/files/temp.jpg" forKey:@"filepath"];
-  [file setObject:@"temp.jpg" forKey:@"filename"];
+  [file setObject:@"sites/default/files/temp.jpg" forKey:@"filepath"];
+//  [file setObject:@"temp.jpg" forKey:@"filename"];
 	NSString *timestamp = [NSString stringWithFormat:@"%d", (long)[[NSDate date] timeIntervalSince1970]];
   [file setObject:timestamp forKey:@"timestamp"];
   NSString *fileSize = [NSString stringWithFormat:@"%d", [imageData length]];

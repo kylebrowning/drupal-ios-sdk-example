@@ -23,7 +23,7 @@
   DIOSUser *user = [[DIOSUser alloc] initWithSession:[delegate session]];
   [user loginWithUsername:[usernameLoginField text] andPassword:[passwordLoginField text]];
   //Since we logged in our main session needs to know the new user information
-  if ([[[[user connResult] objectForKey:@"#data"] objectForKey:@"user"] objectForKey:@"uid"]) {
+  if ([[[user connResult] objectForKey:@"user"] objectForKey:@"uid"]) {
     [delegate setSession:user];
   }
   [self displayDebugDIOS:user];
