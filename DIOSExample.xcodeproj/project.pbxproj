@@ -18,6 +18,59 @@
 		1DBC21501353CEDF00787D4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DBC214E1353CEDF00787D4A /* InfoPlist.strings */; };
 		1DBC21531353CEDF00787D4A /* tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DBC21521353CEDF00787D4A /* tests.h */; };
 		1DBC21551353CEDF00787D4A /* tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBC21541353CEDF00787D4A /* tests.m */; };
+		1DBC21591353D1CE00787D4A /* DIOSConfig.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC10021270A65600754D3E /* DIOSConfig.h */; };
+		1DBC215A1353D1D200787D4A /* DIOSComment.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81F7E125FC4EE00707724 /* DIOSComment.h */; };
+		1DBC215B1353D1ED00787D4A /* DIOSComment.m in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81F7F125FC4EE00707724 /* DIOSComment.m */; };
+		1DBC215C1353D1ED00787D4A /* DIOSConnect.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81F80125FC4EE00707724 /* DIOSConnect.h */; };
+		1DBC215D1353D1ED00787D4A /* DIOSConnect.m in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81F81125FC4EE00707724 /* DIOSConnect.m */; };
+		1DBC215E1353D1ED00787D4A /* DIOSFile.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81F82125FC4EE00707724 /* DIOSFile.h */; };
+		1DBC215F1353D1ED00787D4A /* DIOSFile.m in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81F83125FC4EE00707724 /* DIOSFile.m */; };
+		1DBC21601353D1ED00787D4A /* DIOSNode.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81F84125FC4EE00707724 /* DIOSNode.h */; };
+		1DBC21611353D1ED00787D4A /* DIOSNode.m in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */; };
+		1DBC21621353D1ED00787D4A /* DIOSTaxonomy.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81F86125FC4EE00707724 /* DIOSTaxonomy.h */; };
+		1DBC21631353D1ED00787D4A /* DIOSTaxonomy.m in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81F87125FC4EE00707724 /* DIOSTaxonomy.m */; };
+		1DBC21641353D1ED00787D4A /* DIOSUser.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81F88125FC4EE00707724 /* DIOSUser.h */; };
+		1DBC21651353D1ED00787D4A /* DIOSUser.m in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81F89125FC4EE00707724 /* DIOSUser.m */; };
+		1DBC21661353D1ED00787D4A /* DIOSViews.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81F8A125FC4EE00707724 /* DIOSViews.h */; };
+		1DBC21671353D1ED00787D4A /* DIOSViews.m in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81F8B125FC4EE00707724 /* DIOSViews.m */; };
+		1DBC21681353D1F500787D4A /* NSData+Base64.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD087361263EA36007F0552 /* NSData+Base64.h */; };
+		1DBC21691353D1F500787D4A /* NSData+Base64.m in Resources */ = {isa = PBXBuildFile; fileRef = 1DD087371263EA36007F0552 /* NSData+Base64.m */; };
+		1DBC216D1353D29F00787D4A /* DIOSConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F81125FC4EE00707724 /* DIOSConnect.m */; };
+		1DBC216E1353D2F000787D4A /* ASIAuthenticationDialog.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FB9125FC52200707724 /* ASIAuthenticationDialog.h */; };
+		1DBC216F1353D2F000787D4A /* ASIAuthenticationDialog.m in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FBA125FC52200707724 /* ASIAuthenticationDialog.m */; };
+		1DBC21701353D2F000787D4A /* ASICacheDelegate.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FBB125FC52200707724 /* ASICacheDelegate.h */; };
+		1DBC21711353D2F000787D4A /* ASIDownloadCache.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FBC125FC52200707724 /* ASIDownloadCache.h */; };
+		1DBC21721353D2F000787D4A /* ASIDownloadCache.m in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FBD125FC52200707724 /* ASIDownloadCache.m */; };
+		1DBC21731353D2F000787D4A /* ASIFormDataRequest.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FBE125FC52200707724 /* ASIFormDataRequest.h */; };
+		1DBC21741353D2F000787D4A /* ASIFormDataRequest.m in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FBF125FC52200707724 /* ASIFormDataRequest.m */; };
+		1DBC21751353D2F000787D4A /* ASIHTTPRequest.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FC0125FC52200707724 /* ASIHTTPRequest.h */; };
+		1DBC21761353D2F000787D4A /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81FC1125FC52200707724 /* ASIHTTPRequest.m */; };
+		1DBC21771353D2F000787D4A /* ASIHTTPRequestConfig.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FC2125FC52200707724 /* ASIHTTPRequestConfig.h */; };
+		1DBC21781353D2F000787D4A /* ASIHTTPRequestDelegate.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FC3125FC52200707724 /* ASIHTTPRequestDelegate.h */; };
+		1DBC21791353D2F000787D4A /* ASIInputStream.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FC4125FC52200707724 /* ASIInputStream.h */; };
+		1DBC217A1353D2F000787D4A /* ASIInputStream.m in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FC5125FC52200707724 /* ASIInputStream.m */; };
+		1DBC217B1353D2F000787D4A /* ASINetworkQueue.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FC6125FC52200707724 /* ASINetworkQueue.h */; };
+		1DBC217C1353D2F000787D4A /* ASINetworkQueue.m in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FC7125FC52200707724 /* ASINetworkQueue.m */; };
+		1DBC217D1353D2F000787D4A /* ASIProgressDelegate.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FC8125FC52200707724 /* ASIProgressDelegate.h */; };
+		1DBC217E1353D2F700787D4A /* Reachability.h in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FCA125FC52200707724 /* Reachability.h */; };
+		1DBC217F1353D2F700787D4A /* Reachability.m in Resources */ = {isa = PBXBuildFile; fileRef = 1DD81FCB125FC52200707724 /* Reachability.m */; };
+		1DBC21801353D32700787D4A /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81FBA125FC52200707724 /* ASIAuthenticationDialog.m */; };
+		1DBC21811353D32700787D4A /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81FBD125FC52200707724 /* ASIDownloadCache.m */; };
+		1DBC21821353D32700787D4A /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81FBF125FC52200707724 /* ASIFormDataRequest.m */; };
+		1DBC21831353D32700787D4A /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81FC5125FC52200707724 /* ASIInputStream.m */; };
+		1DBC21841353D32700787D4A /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81FC7125FC52200707724 /* ASINetworkQueue.m */; };
+		1DBC21851353D33C00787D4A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD82005125FC5B100707724 /* CFNetwork.framework */; };
+		1DBC21861353D33C00787D4A /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD82016125FC5C100707724 /* libz.1.2.3.dylib */; };
+		1DBC21871353D33C00787D4A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD82018125FC5EF00707724 /* MobileCoreServices.framework */; };
+		1DBC21881353D33C00787D4A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD8201C125FC5F800707724 /* QuartzCore.framework */; };
+		1DBC21891353D33C00787D4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD82020125FC60000707724 /* SystemConfiguration.framework */; };
+		1DBC218A1353D34900787D4A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81FCB125FC52200707724 /* Reachability.m */; };
+		1DBC218B1353D64A00787D4A /* DIOSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F89125FC4EE00707724 /* DIOSUser.m */; };
+		1DBC218C1353D64C00787D4A /* DIOSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F8B125FC4EE00707724 /* DIOSViews.m */; };
+		1DBC218D1353D64D00787D4A /* DIOSTaxonomy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F87125FC4EE00707724 /* DIOSTaxonomy.m */; };
+		1DBC218E1353D64E00787D4A /* DIOSNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F85125FC4EE00707724 /* DIOSNode.m */; };
+		1DBC218F1353D65000787D4A /* DIOSFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F83125FC4EE00707724 /* DIOSFile.m */; };
+		1DBC21901353D65100787D4A /* DIOSComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81F7F125FC4EE00707724 /* DIOSComment.m */; };
 		1DD084521263AE80007F0552 /* ViewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD084501263AE80007F0552 /* ViewsViewController.m */; };
 		1DD084531263AE80007F0552 /* ViewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD084511263AE80007F0552 /* ViewsViewController.xib */; };
 		1DD084FB1263D0AC007F0552 /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD084F91263D0AC007F0552 /* FileViewController.m */; };
@@ -50,6 +103,16 @@
 		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
 		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DBC216A1353D24A00787D4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
+			remoteInfo = DIOSExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D0B65C412653F2F00C5AA1B /* TaxonomyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxonomyViewController.h; sourceTree = "<group>"; };
@@ -147,9 +210,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DBC21851353D33C00787D4A /* CFNetwork.framework in Frameworks */,
 				1DBC21481353CEDF00787D4A /* UIKit.framework in Frameworks */,
 				1DBC21491353CEDF00787D4A /* Foundation.framework in Frameworks */,
 				1DBC214A1353CEDF00787D4A /* CoreGraphics.framework in Frameworks */,
+				1DBC21861353D33C00787D4A /* libz.1.2.3.dylib in Frameworks */,
+				1DBC21871353D33C00787D4A /* MobileCoreServices.framework in Frameworks */,
+				1DBC21881353D33C00787D4A /* QuartzCore.framework in Frameworks */,
+				1DBC21891353D33C00787D4A /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,14 +416,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DBC21561353CEDF00787D4A /* Build configuration list for PBXNativeTarget "tests" */;
 			buildPhases = (
-				1DBC21421353CEDF00787D4A /* Sources */,
 				1DBC21431353CEDF00787D4A /* Frameworks */,
 				1DBC21441353CEDF00787D4A /* Resources */,
+				1DBC21421353CEDF00787D4A /* Sources */,
 				1DBC21451353CEDF00787D4A /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1DBC216B1353D24A00787D4A /* PBXTargetDependency */,
 			);
 			name = tests;
 			productName = tests;
@@ -408,6 +477,40 @@
 			files = (
 				1DBC21501353CEDF00787D4A /* InfoPlist.strings in Resources */,
 				1DBC21531353CEDF00787D4A /* tests.h in Resources */,
+				1DBC21681353D1F500787D4A /* NSData+Base64.h in Resources */,
+				1DBC21691353D1F500787D4A /* NSData+Base64.m in Resources */,
+				1DBC21591353D1CE00787D4A /* DIOSConfig.h in Resources */,
+				1DBC215B1353D1ED00787D4A /* DIOSComment.m in Resources */,
+				1DBC215C1353D1ED00787D4A /* DIOSConnect.h in Resources */,
+				1DBC215D1353D1ED00787D4A /* DIOSConnect.m in Resources */,
+				1DBC215E1353D1ED00787D4A /* DIOSFile.h in Resources */,
+				1DBC215F1353D1ED00787D4A /* DIOSFile.m in Resources */,
+				1DBC21601353D1ED00787D4A /* DIOSNode.h in Resources */,
+				1DBC21611353D1ED00787D4A /* DIOSNode.m in Resources */,
+				1DBC21621353D1ED00787D4A /* DIOSTaxonomy.h in Resources */,
+				1DBC21631353D1ED00787D4A /* DIOSTaxonomy.m in Resources */,
+				1DBC21641353D1ED00787D4A /* DIOSUser.h in Resources */,
+				1DBC21651353D1ED00787D4A /* DIOSUser.m in Resources */,
+				1DBC21661353D1ED00787D4A /* DIOSViews.h in Resources */,
+				1DBC21671353D1ED00787D4A /* DIOSViews.m in Resources */,
+				1DBC215A1353D1D200787D4A /* DIOSComment.h in Resources */,
+				1DBC216E1353D2F000787D4A /* ASIAuthenticationDialog.h in Resources */,
+				1DBC216F1353D2F000787D4A /* ASIAuthenticationDialog.m in Resources */,
+				1DBC21701353D2F000787D4A /* ASICacheDelegate.h in Resources */,
+				1DBC21711353D2F000787D4A /* ASIDownloadCache.h in Resources */,
+				1DBC21721353D2F000787D4A /* ASIDownloadCache.m in Resources */,
+				1DBC21731353D2F000787D4A /* ASIFormDataRequest.h in Resources */,
+				1DBC21741353D2F000787D4A /* ASIFormDataRequest.m in Resources */,
+				1DBC21751353D2F000787D4A /* ASIHTTPRequest.h in Resources */,
+				1DBC21771353D2F000787D4A /* ASIHTTPRequestConfig.h in Resources */,
+				1DBC21781353D2F000787D4A /* ASIHTTPRequestDelegate.h in Resources */,
+				1DBC21791353D2F000787D4A /* ASIInputStream.h in Resources */,
+				1DBC217A1353D2F000787D4A /* ASIInputStream.m in Resources */,
+				1DBC217B1353D2F000787D4A /* ASINetworkQueue.h in Resources */,
+				1DBC217C1353D2F000787D4A /* ASINetworkQueue.m in Resources */,
+				1DBC217D1353D2F000787D4A /* ASIProgressDelegate.h in Resources */,
+				1DBC217E1353D2F700787D4A /* Reachability.h in Resources */,
+				1DBC217F1353D2F700787D4A /* Reachability.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,10 +567,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DBC21551353CEDF00787D4A /* tests.m in Sources */,
+				1DBC216D1353D29F00787D4A /* DIOSConnect.m in Sources */,
+				1DBC21761353D2F000787D4A /* ASIHTTPRequest.m in Sources */,
+				1DBC21801353D32700787D4A /* ASIAuthenticationDialog.m in Sources */,
+				1DBC218F1353D65000787D4A /* DIOSFile.m in Sources */,
+				1DBC21901353D65100787D4A /* DIOSComment.m in Sources */,
+				1DBC21811353D32700787D4A /* ASIDownloadCache.m in Sources */,
+				1DBC218D1353D64D00787D4A /* DIOSTaxonomy.m in Sources */,
+				1DBC218E1353D64E00787D4A /* DIOSNode.m in Sources */,
+				1DBC21821353D32700787D4A /* ASIFormDataRequest.m in Sources */,
+				1DBC21831353D32700787D4A /* ASIInputStream.m in Sources */,
+				1DBC218B1353D64A00787D4A /* DIOSUser.m in Sources */,
+				1DBC218C1353D64C00787D4A /* DIOSViews.m in Sources */,
+				1DBC21841353D32700787D4A /* ASINetworkQueue.m in Sources */,
+				1DBC218A1353D34900787D4A /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DBC216B1353D24A00787D4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D6058900D05DD3D006BFB54 /* DIOSExample */;
+			targetProxy = 1DBC216A1353D24A00787D4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1DBC214E1353CEDF00787D4A /* InfoPlist.strings */ = {
@@ -494,6 +619,7 @@
 				INFOPLIST_FILE = "DIOSExample-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = DIOSExample;
+				SDKROOT = iphoneos;
 				TEST_AFTER_BUILD = YES;
 			};
 			name = Debug;
@@ -515,6 +641,7 @@
 					"\"$(SRCROOT)/../Publisher/iphoneos4.0/usr/lib\"",
 				);
 				PRODUCT_NAME = DIOSExample;
+				SDKROOT = iphoneos;
 				TEST_AFTER_BUILD = YES;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -583,7 +710,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "48F20818-0A6B-4B03-AE28-1D973E103292";
-				SDKROOT = iphoneos3.2;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				TEST_AFTER_BUILD = YES;
 			};
@@ -599,7 +726,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.2;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				TEST_AFTER_BUILD = YES;
 			};

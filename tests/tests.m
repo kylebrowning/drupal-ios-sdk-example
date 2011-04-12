@@ -8,13 +8,13 @@
 
 #import "tests.h"
 #import "DIOSConnect.h"
-
+#import "DIOSUser.h"
 @implementation tests
 
 - (void)setUp
 {
     [super setUp];
-    
+    session = [[DIOSConnect alloc] init];
     // Set-up code here.
 }
 
@@ -25,9 +25,15 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testSessionConnect
 {
-  STAssertNil(nil, @"yay");
+    STAssertNotNil([session sessid], @"Session id was Nil, something went wrong");
 }
-
+- (void)testSessionLogin
+{
+  DIOSUser *user = [[DIOSUser alloc] initWithSession:session];
+  [user loginWithUsername:@"test" andPassword:@"test"];
+  STAssertNotNil([user userInfo], @"userInfo Found");
+  
+}
 @end

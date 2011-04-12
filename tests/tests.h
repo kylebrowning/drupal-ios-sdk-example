@@ -7,11 +7,11 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-
+@class DIOSConnect;
 
 @interface tests : SenTestCase {
 @private
-    
+  DIOSConnect *session; 
 }
 
 @end

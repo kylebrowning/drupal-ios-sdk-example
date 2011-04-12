@@ -216,7 +216,7 @@ static void logNetworkStatus_(const char *name, int line, NetworkStatus status) 
 
 - (Reachability *) initWithReachabilityRef: (SCNetworkReachabilityRef) ref {
 	
-	if (self = [super init]) {
+	if ((self = [super init])) {
 		
 		reachabilityRef = ref;
 		
