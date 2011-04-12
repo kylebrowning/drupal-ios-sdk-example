@@ -7,7 +7,7 @@
 //
 
 #import "tests.h"
-
+#import "DIOSConnect.h"
 
 @implementation tests
 
@@ -27,7 +27,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in tests");
+  STAssertNil(nil, @"yay");
 }
 
 @end

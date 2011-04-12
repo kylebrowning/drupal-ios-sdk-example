@@ -61,9 +61,9 @@
 		1D6058910D05DD3D006BFB54 /* DIOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DIOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAC10021270A65600754D3E /* DIOSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSConfig.h; sourceTree = "<group>"; };
 		1DBC21471353CEDF00787D4A /* tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DBC214D1353CEDF00787D4A /* tests-Info.plist */ = {isa = PBXFileReference; path = "tests-Info.plist"; sourceTree = "<group>"; };
+		1DBC214D1353CEDF00787D4A /* tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tests-Info.plist"; sourceTree = "<group>"; };
 		1DBC214F1353CEDF00787D4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1DBC21511353CEDF00787D4A /* tests-Prefix.pch */ = {isa = PBXFileReference; path = "tests-Prefix.pch"; sourceTree = "<group>"; };
+		1DBC21511353CEDF00787D4A /* tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tests-Prefix.pch"; sourceTree = "<group>"; };
 		1DBC21521353CEDF00787D4A /* tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tests.h; sourceTree = "<group>"; };
 		1DBC21541353CEDF00787D4A /* tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tests.m; sourceTree = "<group>"; };
 		1DD0844F1263AE80007F0552 /* ViewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewsViewController.h; sourceTree = "<group>"; };

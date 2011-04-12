@@ -11,6 +11,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1DBC21461353CEDF00787D4A"
+               BuildableName = "tests.octest"
+               BlueprintName = "tests"
+               ReferencedContainer = "container:DIOSExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
