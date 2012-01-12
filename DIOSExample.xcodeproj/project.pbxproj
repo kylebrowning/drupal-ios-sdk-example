@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D0B65C712653F2F00C5AA1B /* TaxonomyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0B65C512653F2F00C5AA1B /* TaxonomyViewController.m */; };
 		1D0B65C812653F2F00C5AA1B /* TaxonomyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D0B65C612653F2F00C5AA1B /* TaxonomyViewController.xib */; };
+		1D1EE5A61458B4B900987142 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1EE5A51458B4B900987142 /* libz.1.2.5.dylib */; };
 		1D3623260D0F684500981E51 /* DIOSExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* DIOSExampleAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -60,7 +61,6 @@
 		1DBC21831353D32700787D4A /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81FC5125FC52200707724 /* ASIInputStream.m */; };
 		1DBC21841353D32700787D4A /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81FC7125FC52200707724 /* ASINetworkQueue.m */; };
 		1DBC21851353D33C00787D4A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD82005125FC5B100707724 /* CFNetwork.framework */; };
-		1DBC21861353D33C00787D4A /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD82016125FC5C100707724 /* libz.1.2.3.dylib */; };
 		1DBC21871353D33C00787D4A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD82018125FC5EF00707724 /* MobileCoreServices.framework */; };
 		1DBC21881353D33C00787D4A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD8201C125FC5F800707724 /* QuartzCore.framework */; };
 		1DBC21891353D33C00787D4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD82020125FC60000707724 /* SystemConfiguration.framework */; };
@@ -91,7 +91,6 @@
 		1DD81FD1125FC52200707724 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81FC7125FC52200707724 /* ASINetworkQueue.m */; };
 		1DD81FD2125FC52200707724 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD81FCB125FC52200707724 /* Reachability.m */; };
 		1DD82006125FC5B100707724 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD82005125FC5B100707724 /* CFNetwork.framework */; };
-		1DD82017125FC5C100707724 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD82016125FC5C100707724 /* libz.1.2.3.dylib */; };
 		1DD82019125FC5EF00707724 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD82018125FC5EF00707724 /* MobileCoreServices.framework */; };
 		1DD8201D125FC5F800707724 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD8201C125FC5F800707724 /* QuartzCore.framework */; };
 		1DD82021125FC60000707724 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD82020125FC60000707724 /* SystemConfiguration.framework */; };
@@ -118,6 +117,7 @@
 		1D0B65C412653F2F00C5AA1B /* TaxonomyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxonomyViewController.h; sourceTree = "<group>"; };
 		1D0B65C512653F2F00C5AA1B /* TaxonomyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxonomyViewController.m; sourceTree = "<group>"; };
 		1D0B65C612653F2F00C5AA1B /* TaxonomyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TaxonomyViewController.xib; path = Classes/TaxonomyViewController.xib; sourceTree = "<group>"; };
+		1D1EE5A51458B4B900987142 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* DIOSExampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSExampleAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* DIOSExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSExampleAppDelegate.m; sourceTree = "<group>"; };
@@ -172,7 +172,6 @@
 		1DD81FCA125FC52200707724 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		1DD81FCB125FC52200707724 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		1DD82005125FC5B100707724 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		1DD82016125FC5C100707724 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		1DD82018125FC5EF00707724 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1DD8201C125FC5F800707724 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1DD82020125FC60000707724 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -195,11 +194,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D1EE5A61458B4B900987142 /* libz.1.2.5.dylib in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
 				1DD82006125FC5B100707724 /* CFNetwork.framework in Frameworks */,
-				1DD82017125FC5C100707724 /* libz.1.2.3.dylib in Frameworks */,
 				1DD82019125FC5EF00707724 /* MobileCoreServices.framework in Frameworks */,
 				1DD8201D125FC5F800707724 /* QuartzCore.framework in Frameworks */,
 				1DD82021125FC60000707724 /* SystemConfiguration.framework in Frameworks */,
@@ -214,7 +213,6 @@
 				1DBC21481353CEDF00787D4A /* UIKit.framework in Frameworks */,
 				1DBC21491353CEDF00787D4A /* Foundation.framework in Frameworks */,
 				1DBC214A1353CEDF00787D4A /* CoreGraphics.framework in Frameworks */,
-				1DBC21861353D33C00787D4A /* libz.1.2.3.dylib in Frameworks */,
 				1DBC21871353D33C00787D4A /* MobileCoreServices.framework in Frameworks */,
 				1DBC21881353D33C00787D4A /* QuartzCore.framework in Frameworks */,
 				1DBC21891353D33C00787D4A /* SystemConfiguration.framework in Frameworks */,
@@ -344,6 +342,7 @@
 		29B97314FDCFA39411CA2CEA /* DIOSExample */ = {
 			isa = PBXGroup;
 			children = (
+				1D1EE5A51458B4B900987142 /* libz.1.2.5.dylib */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -384,7 +383,6 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765070DF74369002DB57D /* CoreGraphics.framework */,
-				1DD82016125FC5C100707724 /* libz.1.2.3.dylib */,
 				1DD82018125FC5EF00707724 /* MobileCoreServices.framework */,
 				1DD8201C125FC5F800707724 /* QuartzCore.framework */,
 				1DD82020125FC60000707724 /* SystemConfiguration.framework */,

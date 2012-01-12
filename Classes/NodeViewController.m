@@ -81,7 +81,7 @@
 
 - (IBAction) getNode {
   DIOSNode *node = [[DIOSNode alloc] initWithSession:[delegate session]];
-  [node nodeGet:[nidGetField text]];
+  [node nodeGetIndex];
   [self displayDebugDIOS:node];
   [node release];  
 }
