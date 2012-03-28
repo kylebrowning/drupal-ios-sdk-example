@@ -1,5 +1,0 @@
-An iPad project showing off drupal-ios-sdk
-For this project to build you must either copy and paste drupal-ios-sdk in the project folder, or
-have drupal-ios-sdk checked out in the parrent directory, and run
-git submodule init
-git submodule update
