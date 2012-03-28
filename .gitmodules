@@ -1,3 +1,6 @@
 [submodule "drupal-ios-sdk"]
 	path = drupal-ios-sdk
-	url = ../drupal-ios-sdk
+	url = https://github.com/workhabitinc/drupal-ios-sdk
+[submodule "MBProgressHUD"]
+	path = MBProgressHUD
+	url = git://github.com/matej/MBProgressHUD.git
