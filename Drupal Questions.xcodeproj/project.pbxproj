@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D6A0FC51625E2BC00DEAF9A /* AFImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A0FC41625E2BC00DEAF9A /* AFImageCache.m */; };
 		1D721582150E8575008F8118 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D72156E150E8575008F8118 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1D721583150E8575008F8118 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D721570150E8575008F8118 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1D721584150E8575008F8118 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D721572150E8575008F8118 /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -76,19 +77,21 @@
 		1DCAAC1515146B9200727BF4 /* register_button_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCAAC0915146B9200727BF4 /* register_button_on@2x.png */; };
 		1DCAAC1815146C0300727BF4 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCAAC1715146C0300727BF4 /* SettingsViewController.m */; };
 		1DCAAC1B15146C8D00727BF4 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCAAC1A15146C8B00727BF4 /* RegisterViewController.m */; };
-		1DE8145B1513F22B00DB291D /* DIOSComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8144D1513F22B00DB291D /* DIOSComment.m */; };
-		1DE8145C1513F22B00DB291D /* DIOSFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8144F1513F22B00DB291D /* DIOSFile.m */; };
-		1DE8145D1513F22B00DB291D /* DIOSNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE814511513F22B00DB291D /* DIOSNode.m */; };
-		1DE8145E1513F22B00DB291D /* DIOSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE814531513F22B00DB291D /* DIOSSession.m */; };
-		1DE8145F1513F22B00DB291D /* DIOSTaxonomy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE814551513F22B00DB291D /* DIOSTaxonomy.m */; };
-		1DE814601513F22B00DB291D /* DIOSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE814571513F22B00DB291D /* DIOSUser.m */; };
+		1DE8145B1513F22B00DB291D /* DIOSComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8144D1513F22B00DB291D /* DIOSComment.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1DE8145C1513F22B00DB291D /* DIOSFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8144F1513F22B00DB291D /* DIOSFile.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1DE8145D1513F22B00DB291D /* DIOSNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE814511513F22B00DB291D /* DIOSNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1DE8145E1513F22B00DB291D /* DIOSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE814531513F22B00DB291D /* DIOSSession.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1DE8145F1513F22B00DB291D /* DIOSTaxonomy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE814551513F22B00DB291D /* DIOSTaxonomy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1DE814601513F22B00DB291D /* DIOSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE814571513F22B00DB291D /* DIOSUser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1DE814611513F22B00DB291D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1DE814581513F22B00DB291D /* LICENSE */; };
 		1DE814621513F22B00DB291D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1DE814591513F22B00DB291D /* README.md */; };
-		1DE8146915140C8F00DB291D /* DIOSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8146815140C8F00DB291D /* DIOSView.m */; };
+		1DE8146915140C8F00DB291D /* DIOSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8146815140C8F00DB291D /* DIOSView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1DE8146C151412A200DB291D /* WHDIOSTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8146B151412A100DB291D /* WHDIOSTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D6A0FC31625E2BC00DEAF9A /* AFImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFImageCache.h; path = "../../gardens-mobile/Drupal Gardens/AFNetworking/AFImageCache.h"; sourceTree = "<group>"; };
+		1D6A0FC41625E2BC00DEAF9A /* AFImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFImageCache.m; path = "../../gardens-mobile/Drupal Gardens/AFNetworking/AFImageCache.m"; sourceTree = "<group>"; };
 		1D72156D150E8575008F8118 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		1D72156E150E8575008F8118 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AFHTTPClient.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		1D72156F150E8575008F8118 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 		1D72156C150E8575008F8118 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				1D6A0FC31625E2BC00DEAF9A /* AFImageCache.h */,
+				1D6A0FC41625E2BC00DEAF9A /* AFImageCache.m */,
 				1D72156D150E8575008F8118 /* AFHTTPClient.h */,
 				1D72156E150E8575008F8118 /* AFHTTPClient.m */,
 				1D72156F150E8575008F8118 /* AFHTTPRequestOperation.h */,
@@ -240,7 +245,8 @@
 				1D721580150E8575008F8118 /* UIImageView+AFNetworking.h */,
 				1D721581150E8575008F8118 /* UIImageView+AFNetworking.m */,
 			);
-			path = AFNetworking;
+			name = AFNetworking;
+			path = ../AFNetworking;
 			sourceTree = "<group>";
 		};
 		1D782838151169D900880F91 /* Images */ = {
@@ -525,6 +531,7 @@
 				1DE8146C151412A200DB291D /* WHDIOSTest.m in Sources */,
 				1DCAAC1815146C0300727BF4 /* SettingsViewController.m in Sources */,
 				1DCAAC1B15146C8D00727BF4 /* RegisterViewController.m in Sources */,
+				1D6A0FC51625E2BC00DEAF9A /* AFImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

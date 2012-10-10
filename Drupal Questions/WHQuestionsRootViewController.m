@@ -16,16 +16,17 @@
 @synthesize questions = _questions;
 
 - (void) pullQuestions {
-  DIOSView *view = [[DIOSView alloc] init];
-  NSMutableDictionary *viewParams = [NSMutableDictionary new];
-  [viewParams setValue:@"questions_view" forKey:@"view_name"];
-  [view viewGet:viewParams success:^(AFHTTPRequestOperation *operation, id responseObject) {
-    _questions = responseObject;
-    [self.tableView reloadData];
-    [HUD hide:YES];
-  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-    ALog(@"Failure: %@", [error localizedDescription]);
-  }];
+
+//  DIOSView *view = [[DIOSView alloc] init];
+//  NSMutableDictionary *viewParams = [NSMutableDictionary new];
+//  [viewParams setValue:@"questions_view" forKey:@"view_name"];
+//  [view viewGet:viewParams success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//    _questions = responseObject;
+//    [self.tableView reloadData];
+//    [HUD hide:YES];
+//  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//    ALog(@"Failure: %@", [error localizedDescription]);
+//  }];
 }
 - (IBAction)addQuestion:(id)sender {
   [self performSegueWithIdentifier:@"addQuestion" sender:sender];
@@ -77,17 +78,17 @@
   [self setTitle:@"Questions"];
   [self setQuestions:[NSArray new]];
   [self pullQuestions];
-  DIOSNode *node = [[DIOSNode alloc] init];
-  NSMutableDictionary *nodeData = [NSMutableDictionary new];
-  [nodeData setValue:@"5" forKey:@"nid"];
-  [node nodeGet:nodeData success:^(AFHTTPRequestOperation *operation, id responseObject) {
-    //Do Something with the responseObject
-    NSLog(@"%@", responseObject);
-  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-    //we failed, uh-oh lets error log this.
-    NSLog(@"%@,  %@", [error localizedDescription], [operation responseString]);
-  }];
-  
+//  DIOSNode *node = [[DIOSNode alloc] init];
+//  NSMutableDictionary *nodeData = [NSMutableDictionary new];
+//  [nodeData setValue:@"5" forKey:@"nid"];
+//  [node nodeGet:nodeData success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//    //Do Something with the responseObject
+//    NSLog(@"%@", responseObject);
+//  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//    //we failed, uh-oh lets error log this.
+//    NSLog(@"%@,  %@", [error localizedDescription], [operation responseString]);
+//  }];
+
 }
 
 - (void)viewDidUnload

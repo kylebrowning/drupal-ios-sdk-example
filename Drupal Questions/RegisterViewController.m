@@ -70,17 +70,17 @@
   [userData setValue:[usernameField text] forKey:@"name"];
   [userData setValue:[password text] forKey:@"pass"];
   [userData setValue:[emailField text] forKey:@"mail"];
-  [user userSave:userData success:^(AFHTTPRequestOperation *operation, id responseObject) {
-    HUD.labelText = @"Successful";
-    [HUD show:YES];
-    sleep(2);
-    [HUD hide:YES];
-  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-    HUD.labelText = [error localizedDescription];
-    [HUD show:YES];
-    sleep(2);
-    [HUD hide:YES];
-  }];
+//  [user userSave:userData success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//    HUD.labelText = @"Successful";
+//    [HUD show:YES];
+//    sleep(2);
+//    [HUD hide:YES];
+//  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//    HUD.labelText = [error localizedDescription];
+//    [HUD show:YES];
+//    sleep(2);
+//    [HUD hide:YES];
+//  }];
 }
 
 - (void)viewDidUnload

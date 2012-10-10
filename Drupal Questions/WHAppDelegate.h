@@ -11,5 +11,6 @@
 @interface WHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) UIWebView *oauthWebView;
+@property (strong, nonatomic) NSMutableDictionary *requestTokens;
 @end

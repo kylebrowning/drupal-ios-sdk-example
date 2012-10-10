@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="xtt-6q-ZUM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="xtt-6q-ZUM">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
         <!--Table View Controller-->
         <scene sceneID="GWK-u9-zca">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lz1-z0-WRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="QuestionDetailViewController" id="1CB-zK-nrk" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Xws-pb-vux">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -55,13 +53,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Gsv-g6-JUg"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lz1-z0-WRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-323" y="-943"/>
         </scene>
         <!--Navigation Controller - Questions-->
         <scene sceneID="Txo-68-XMC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TMh-3x-2SZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController title="Questions" id="xtt-6q-ZUM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Questions" id="oGX-Jb-rui"/>
                     <toolbarItems/>
@@ -78,13 +76,13 @@
                         <segue destination="fMQ-DF-QPe" kind="relationship" relationship="rootViewController" id="vdz-aT-qgK"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMh-3x-2SZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1617" y="-1889"/>
         </scene>
         <!--Add Question View Controller-->
         <scene sceneID="tXI-ts-6Rx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UPj-K2-fF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ZYm-kH-mGf" customClass="AddQuestionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="38l-V3-mf1">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -131,13 +129,13 @@
                         <outlet property="sessionTItle" destination="VOr-Jd-u30" id="97Y-N6-srd"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UPj-K2-fF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="490" y="-1922"/>
         </scene>
         <!--Questions Root View Controller-->
         <scene sceneID="YaW-T3-wbg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hEp-dz-jDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="fMQ-DF-QPe" customClass="WHQuestionsRootViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="105" sectionHeaderHeight="22" sectionFooterHeight="22" id="s5T-8P-q2i">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -240,13 +238,13 @@
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEp-dz-jDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-953" y="-1868"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aUa-cS-bgP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gQt-Xj-i4U" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="eSe-H9-czz" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="iSt-SH-ESj">
@@ -258,13 +256,13 @@
                         <segue destination="ZYm-kH-mGf" kind="relationship" relationship="rootViewController" id="WZe-x3-nYH"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQt-Xj-i4U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-206" y="-1932"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="Xef-lh-YF9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bkV-gC-rdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="6Gk-s7-yL4" customClass="SettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2S8-nC-tFT">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -319,13 +317,13 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" id="1UP-65-mN9"/>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bkV-gC-rdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-780" y="-2991"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5JU-PN-Bmo">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lUD-aa-lhv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="91W-LH-USL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="kwg-Vc-t03">
@@ -337,13 +335,13 @@
                         <segue destination="6Gk-s7-yL4" kind="relationship" relationship="rootViewController" id="fgM-zx-myM"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUD-aa-lhv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1396" y="-2996"/>
         </scene>
         <!--Add Question View Controller-->
         <scene sceneID="rUE-3g-AhP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4hQ-Qj-zgL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="g5S-uo-xs3" customClass="AddQuestionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Pj-Rx-tj6">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -366,13 +364,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="rN1-hC-tYS"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hQ-Qj-zgL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1048" y="-2807"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jKT-F8-BVa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qox-dV-PbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="iKF-65-Dzp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="NmV-Pg-Vq3">
@@ -384,13 +382,13 @@
                         <segue destination="g5S-uo-xs3" kind="relationship" relationship="rootViewController" id="0Ep-gB-i92"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qox-dV-PbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="352" y="-2812"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="adt-Oy-ViN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xfR-U6-Qc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="OJt-8l-n7O" customClass="RegisterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5ue-LW-6KI">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -451,6 +449,7 @@
                         <outlet property="usernameField" destination="VST-jn-D1T" id="sm3-p4-xSA"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfR-U6-Qc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-286" y="-4241"/>
         </scene>
@@ -461,40 +460,6 @@
         <image name="cell_bg.png" width="304" height="98"/>
         <image name="hr.png" width="303" height="1"/>
     </resources>
-    <classes>
-        <class className="AddQuestionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddQuestionViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="questionBody" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="questionTitle" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="sessionTItle" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="RegisterViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RegisterViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="emailField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="usernameField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="SettingsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
-        </class>
-        <class className="WHQuestionCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WHQuestionCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="authorName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="commentCount" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="questionBody" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="questionTitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="sessionName" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WHQuestionsRootViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WHQuestionsRootViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
